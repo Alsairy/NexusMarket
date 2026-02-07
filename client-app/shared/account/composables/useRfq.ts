@@ -697,8 +697,8 @@ function _useRfq() {
 
   return {
     loading: readonly(loading),
-    rfqs: readonly(rfqs),
-    bids: readonly(bids),
+    rfqs,
+    bids,
     totalRfqs,
     openRfqs,
     avgBidsPerRfq,

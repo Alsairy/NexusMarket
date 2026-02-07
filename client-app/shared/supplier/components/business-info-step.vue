@@ -13,7 +13,7 @@
           :placeholder="$t('pages.supplier.onboarding.business_info.company_name_placeholder')"
           required
           class="col-span-1 md:col-span-2"
-          @update:model-value="(val: string) => updateBusinessInfo({ companyName: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ companyName: val ?? '' })"
         />
 
         <VcInput
@@ -21,7 +21,7 @@
           :label="$t('pages.supplier.onboarding.business_info.registration_number')"
           :placeholder="$t('pages.supplier.onboarding.business_info.registration_number_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ registrationNumber: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ registrationNumber: val ?? '' })"
         />
 
         <VcInput
@@ -29,7 +29,7 @@
           :label="$t('pages.supplier.onboarding.business_info.tax_id')"
           :placeholder="$t('pages.supplier.onboarding.business_info.tax_id_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ taxId: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ taxId: val ?? '' })"
         />
 
         <VcInput
@@ -37,7 +37,7 @@
           :label="$t('pages.supplier.onboarding.business_info.industry')"
           :placeholder="$t('pages.supplier.onboarding.business_info.industry_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ industry: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ industry: val ?? '' })"
         />
 
         <VcInput
@@ -45,7 +45,7 @@
           :label="$t('pages.supplier.onboarding.business_info.country')"
           :placeholder="$t('pages.supplier.onboarding.business_info.country_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ country: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ country: val ?? '' })"
         />
 
         <VcInput
@@ -53,7 +53,7 @@
           :label="$t('pages.supplier.onboarding.business_info.city')"
           :placeholder="$t('pages.supplier.onboarding.business_info.city_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ city: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ city: val ?? '' })"
         />
 
         <VcInput
@@ -61,7 +61,7 @@
           :label="$t('pages.supplier.onboarding.business_info.address')"
           :placeholder="$t('pages.supplier.onboarding.business_info.address_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ address: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ address: val ?? '' })"
         />
 
         <VcInput
@@ -69,7 +69,7 @@
           :label="$t('pages.supplier.onboarding.business_info.postal_code')"
           :placeholder="$t('pages.supplier.onboarding.business_info.postal_code_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ postalCode: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ postalCode: val ?? '' })"
         />
       </div>
     </div>
@@ -86,7 +86,7 @@
           :label="$t('pages.supplier.onboarding.business_info.contact_name')"
           :placeholder="$t('pages.supplier.onboarding.business_info.contact_name_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ contactName: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ contactName: val ?? '' })"
         />
 
         <VcInput
@@ -94,7 +94,7 @@
           :label="$t('pages.supplier.onboarding.business_info.contact_email')"
           :placeholder="$t('pages.supplier.onboarding.business_info.contact_email_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ contactEmail: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ contactEmail: val ?? '' })"
         />
 
         <VcInput
@@ -102,14 +102,14 @@
           :label="$t('pages.supplier.onboarding.business_info.contact_phone')"
           :placeholder="$t('pages.supplier.onboarding.business_info.contact_phone_placeholder')"
           required
-          @update:model-value="(val: string) => updateBusinessInfo({ contactPhone: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ contactPhone: val ?? '' })"
         />
 
         <VcInput
           :model-value="application.businessInfo.website ?? ''"
           :label="$t('pages.supplier.onboarding.business_info.website')"
           :placeholder="$t('pages.supplier.onboarding.business_info.website_placeholder')"
-          @update:model-value="(val: string) => updateBusinessInfo({ website: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ website: val ?? '' })"
         />
       </div>
     </div>
@@ -126,21 +126,21 @@
           :label="$t('pages.supplier.onboarding.business_info.description')"
           :placeholder="$t('pages.supplier.onboarding.business_info.description_placeholder')"
           class="col-span-1 md:col-span-2"
-          @update:model-value="(val: string) => updateBusinessInfo({ description: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ description: val ?? '' })"
         />
 
         <VcInput
           :model-value="application.businessInfo.employeeCount ?? ''"
           :label="$t('pages.supplier.onboarding.business_info.employee_count')"
           :placeholder="$t('pages.supplier.onboarding.business_info.employee_count_placeholder')"
-          @update:model-value="(val: string) => updateBusinessInfo({ employeeCount: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ employeeCount: val ?? '' })"
         />
 
         <VcInput
           :model-value="application.businessInfo.annualRevenue ?? ''"
           :label="$t('pages.supplier.onboarding.business_info.annual_revenue')"
           :placeholder="$t('pages.supplier.onboarding.business_info.annual_revenue_placeholder')"
-          @update:model-value="(val: string) => updateBusinessInfo({ annualRevenue: val })"
+          @update:model-value="(val: string | undefined) => updateBusinessInfo({ annualRevenue: val ?? '' })"
         />
       </div>
     </div>

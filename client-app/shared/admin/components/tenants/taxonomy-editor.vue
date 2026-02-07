@@ -58,17 +58,13 @@
         :description="$t('pages.admin.tenants.custom_attributes_description')"
         mobile-breakpoint="lg"
       >
-        <template #mobile-item="{ item, index }">
+        <template #mobile-item="{ item }">
           <div class="grid grid-cols-2 gap-y-3 border-b border-neutral-200 p-5">
             <div class="col-span-2 flex items-center justify-between">
-              <input
-                v-model="localAttributes[index].label"
-                type="text"
-                class="font-bold bg-transparent focus:outline-none"
-              />
+              <span class="font-bold">{{ item.label }}</span>
               <button
                 class="text-neutral-400 hover:text-danger-500"
-                @click="removeAttribute(index)"
+                @click="removeAttribute(localAttributes.indexOf(item))"
               >
                 <VcIcon name="delete-bin" size="xs" />
               </button>
@@ -78,33 +74,22 @@
               <span class="text-xs text-neutral-400">
                 {{ $t("pages.admin.tenants.attribute_key_label") }}
               </span>
-              <input
-                v-model="localAttributes[index].key"
-                type="text"
-                class="bg-transparent text-sm font-mono focus:outline-none"
-              />
+              <span class="text-sm font-mono">{{ item.key }}</span>
             </div>
 
             <div class="flex flex-col items-end">
               <span class="text-xs text-neutral-400">
                 {{ $t("pages.admin.tenants.attribute_type_label") }}
               </span>
-              <select
-                v-model="localAttributes[index].type"
-                class="bg-transparent text-sm focus:outline-none"
-              >
-                <option value="text">{{ $t("pages.admin.tenants.type_text") }}</option>
-                <option value="number">{{ $t("pages.admin.tenants.type_number") }}</option>
-                <option value="boolean">{{ $t("pages.admin.tenants.type_boolean") }}</option>
-                <option value="select">{{ $t("pages.admin.tenants.type_select") }}</option>
-              </select>
+              <span class="text-sm">{{ item.type }}</span>
             </div>
 
             <div class="col-span-2 flex items-center gap-2">
               <input
-                v-model="localAttributes[index].required"
+                :checked="item.required"
                 type="checkbox"
                 class="rounded border-neutral-300 text-primary-500 focus:ring-primary-500"
+                disabled
               />
               <span class="text-sm text-neutral-600">
                 {{ $t("pages.admin.tenants.attribute_required_label") }}

@@ -874,8 +874,8 @@ export const useTenantConfig = createGlobalState(() => {
 
   return {
     loading: readonly(loading),
-    tenants: readonly(tenants),
-    playbooks: readonly(playbooks),
+    tenants,
+    playbooks,
     selectedTenant,
     totalTenants,
     activeTenants,
