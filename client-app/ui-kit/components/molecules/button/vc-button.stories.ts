@@ -214,7 +214,7 @@ export const Link: StoryType = {
 
 export const ExternalLink: StoryType = {
   args: {
-    externalLink: "https://virtocommerce.com",
+    externalLink: "https://nexusmarket.io",
     target: "_blank",
   },
 };

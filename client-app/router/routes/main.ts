@@ -3,6 +3,9 @@ import { accountRoutes } from "./account";
 import { cartRoutes } from "./cart";
 import { checkoutRoutes } from "./checkout";
 import { corporateRoutes } from "./company";
+import { supplierRoutes } from "./supplier";
+import { regulatorRoutes } from "./regulator";
+import { adminRoutes } from "./admin";
 import type { RouteRecordRaw } from "vue-router";
 import Error400 from "@/pages/400.vue";
 import Error403 from "@/pages/403.vue";
@@ -86,6 +89,9 @@ export const mainRoutes: RouteRecordRaw[] = [
     props: (route) => ({ allowSetMeta: true, productId: route.params.productId }),
   },
   { path: "/shared-list/:sharingKey", name: "SharedList", component: SharedList, props: true },
+  ...supplierRoutes,
+  ...regulatorRoutes,
+  ...adminRoutes,
 
   /** NOTE: Always leave it last. */
   { path: "/:pathMatch(.*)*", name: "Matcher", component: Matcher, props: true },

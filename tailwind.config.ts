@@ -1,4 +1,5 @@
 import { BREAKPOINTS } from "./client-app/core/constants/tailwind.js";
+import plugin from "tailwindcss/plugin";
 import type { Config } from "tailwindcss";
 
 const primaryColors = {
@@ -179,7 +180,9 @@ module.exports = {
     ...colorSet,
     screens: BREAKPOINTS,
     fontFamily: {
-      lato: ["Lato", "sans-serif"],
+      lato: ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
+      arabic: ["IBM Plex Sans Arabic", "sans-serif"],
     },
 
     fontSize: {
@@ -294,5 +297,21 @@ module.exports = {
     },
   },
 
-  plugins: [require("@tailwindcss/container-queries"), require("tw-elements/dist/plugin.cjs")],
+  plugins: [
+    require("@tailwindcss/container-queries"),
+    require("tw-elements/dist/plugin.cjs"),
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".flip-x": {
+          transform: "scaleX(-1)",
+        },
+        '[dir="rtl"] .rtl\\:flip-x': {
+          transform: "scaleX(-1)",
+        },
+        '[dir="rtl"] .rtl\\:font-arabic': {
+          fontFamily: '"IBM Plex Sans Arabic", sans-serif',
+        },
+      });
+    }),
+  ],
 } satisfies Config;

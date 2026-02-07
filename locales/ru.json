@@ -376,7 +376,7 @@
       },
       "footer": {
         "version": "Версия",
-        "company_name": "Virto Commerce",
+        "company_name": "Nexus Market",
         "company_information_link_group": "Подробнее о компании",
         "about_us_link": "О нас",
         "investor_relations_link": "Связи с инвесторами",
@@ -403,7 +403,7 @@
         "builder_io_page_link": "Страница в Builder.io",
         "all_rights_reserved": "Все права защищены",
         "asp_net_e_commerce_platform": "Платформа ASP.NET ecommerce {0}",
-        "by_virto": "Virto Commerce"
+        "by_virto": "Nexus Market"
       },
       "search_bar": {
         "enter_keyword_placeholder": "Поиск",

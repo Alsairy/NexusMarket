@@ -38,7 +38,7 @@ export default defineConfig(({ command, mode }): UserConfig => {
     plugins: [
       isServe
         ? mkcert({
-            force: true,
+            force: false,
             savePath: path.resolve(__dirname, ".certificates"),
             keyFileName: "private.pem",
             certFileName: "public.pem",

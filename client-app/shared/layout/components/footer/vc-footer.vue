@@ -35,7 +35,7 @@
       <i18n-t keypath="shared.layout.footer.asp_net_e_commerce_platform" tag="span" scope="global">
         <a
           class="font-bold text-[--footer-bottom-link-color] hover:text-[--footer-bottom-link-hover-color] print:text-additional-950"
-          href="https://virtocommerce.com"
+          href="https://nexusmarket.io"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -14,6 +14,15 @@ const ListDetails = () => import("@/pages/account/list-details.vue");
 const SavedForLaterDetails = () => import("@/pages/account/saved-for-later-details.vue");
 const SavedCreditCards = () => import("@/pages/account/saved-credit-cards.vue");
 const Impersonate = () => import("@/pages/account/impersonate.vue");
+const Licenses = () => import("@/pages/account/licenses.vue");
+const Compliance = () => import("@/pages/account/compliance.vue");
+const Analytics = () => import("@/pages/account/analytics.vue");
+const Rfq = () => import("@/pages/account/rfq.vue");
+const RfqDetail = () => import("@/pages/account/rfq-detail.vue");
+const Contracts = () => import("@/pages/account/contracts.vue");
+const ContractDetail = () => import("@/pages/account/contract-detail.vue");
+const Payments = () => import("@/pages/account/payments.vue");
+const AiInsights = () => import("@/pages/account/ai-insights.vue");
 
 export const accountRoutes: RouteRecordRaw[] = [
   { path: "dashboard", name: "Dashboard", component: Dashboard },
@@ -85,4 +94,23 @@ export const accountRoutes: RouteRecordRaw[] = [
     props: true,
     component: Impersonate,
   },
+  { path: "licenses", name: "Licenses", component: Licenses },
+  { path: "compliance", name: "Compliance", component: Compliance },
+  { path: "analytics", name: "Analytics", component: Analytics },
+  {
+    path: "rfq",
+    children: [
+      { path: "", name: "Rfq", component: Rfq },
+      { path: ":rfqId", name: "RfqDetail", component: RfqDetail, props: true },
+    ],
+  },
+  {
+    path: "contracts",
+    children: [
+      { path: "", name: "Contracts", component: Contracts },
+      { path: ":contractId", name: "ContractDetail", component: ContractDetail, props: true },
+    ],
+  },
+  { path: "payments", name: "Payments", component: Payments },
+  { path: "ai-insights", name: "AiInsights", component: AiInsights },
 ];

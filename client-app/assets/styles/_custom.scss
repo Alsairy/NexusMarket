@@ -1,7 +1,121 @@
-/* your custom styles here
- *
- * customization example:
- * .vc-typography--variant--h1 {
- *   @apply normal-case;
- * }
- * */
+/* Nexus Market Brand Color System */
+:root {
+  /* Primary (Accent Orange-Red) */
+  --color-primary-50: #fff7f5;
+  --color-primary-100: #ffede8;
+  --color-primary-200: #ffd5cc;
+  --color-primary-300: #ffb3a3;
+  --color-primary-400: #ff8a6d;
+  --color-primary-500: #ff6037;
+  --color-primary-600: #e5502c;
+  --color-primary-700: #cc4025;
+  --color-primary-800: #993020;
+  --color-primary-900: #66201a;
+  --color-primary-950: #331010;
+
+  /* Secondary (Dark tones) */
+  --color-secondary-50: #f5f5f5;
+  --color-secondary-100: #e5e5e5;
+  --color-secondary-200: #cccccc;
+  --color-secondary-300: #a3a3a3;
+  --color-secondary-400: #737373;
+  --color-secondary-500: #525252;
+  --color-secondary-600: #404040;
+  --color-secondary-700: #333333;
+  --color-secondary-800: #262626;
+  --color-secondary-900: #171717;
+  --color-secondary-950: #000000;
+
+  /* Neutral (Black/White spectrum) */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #000000;
+
+  /* Accent */
+  --color-accent-50: #fff7f5;
+  --color-accent-100: #ffede8;
+  --color-accent-200: #ffd5cc;
+  --color-accent-300: #ffb3a3;
+  --color-accent-400: #ff8a6d;
+  --color-accent-500: #ff6037;
+  --color-accent-600: #e5502c;
+  --color-accent-700: #cc4025;
+  --color-accent-800: #993020;
+  --color-accent-900: #66201a;
+  --color-accent-950: #331010;
+
+  /* Additional */
+  --color-additional-50: #ffffff;
+  --color-additional-950: #000000;
+
+  /* Info */
+  --color-info-50: #f0f9ff;
+  --color-info-100: #e0f2fe;
+  --color-info-200: #bae6fd;
+  --color-info-300: #7dd3fc;
+  --color-info-400: #38bdf8;
+  --color-info-500: #0ea5e9;
+  --color-info-600: #0284c7;
+  --color-info-700: #0369a1;
+  --color-info-800: #075985;
+  --color-info-900: #0c4a6e;
+  --color-info-950: #082f49;
+
+  /* Success */
+  --color-success-50: #f0fdf4;
+  --color-success-100: #dcfce7;
+  --color-success-200: #bbf7d0;
+  --color-success-300: #86efac;
+  --color-success-400: #4ade80;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+  --color-success-700: #15803d;
+  --color-success-800: #166534;
+  --color-success-900: #14532d;
+  --color-success-950: #052e16;
+
+  /* Warning */
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-200: #fde68a;
+  --color-warning-300: #fcd34d;
+  --color-warning-400: #fbbf24;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+  --color-warning-700: #b45309;
+  --color-warning-800: #92400e;
+  --color-warning-900: #78350f;
+  --color-warning-950: #451a03;
+
+  /* Danger */
+  --color-danger-50: #fef2f2;
+  --color-danger-100: #fee2e2;
+  --color-danger-200: #fecaca;
+  --color-danger-300: #fca5a5;
+  --color-danger-400: #f87171;
+  --color-danger-500: #ef4444;
+  --color-danger-600: #dc2626;
+  --color-danger-700: #b91c1c;
+  --color-danger-800: #991b1b;
+  --color-danger-900: #7f1d1d;
+  --color-danger-950: #450a0a;
+
+  /* Nexus Market Design Overrides */
+  --link-color: var(--color-primary-600);
+  --link-hover-color: var(--color-primary-700);
+  --empty-list-icon: var(--color-primary-500);
+  --focus-color: rgb(from var(--color-primary-500) r g b / 0.3);
+  --mobile-menu-navigation-color: var(--color-primary-400);
+  --mobile-menu-control-color: var(--color-primary-500);
+  --header-top-link-color: var(--color-primary-200);
+  --header-top-link-active-color: var(--color-primary-300);
+  --footer-bottom-link-color: var(--color-primary-300);
+}

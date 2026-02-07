@@ -262,7 +262,7 @@
       <tr
         v-for="order in orders"
         :key="order.id"
-        class="cursor-pointer even:bg-neutral-50 hover:bg-neutral-200"
+        class="cursor-pointer even:bg-neutral-50 hover:bg-primary-50 transition-colors duration-150"
         @click="goToOrderDetails(order)"
       >
         <td class="overflow-hidden text-ellipsis p-5">

@@ -127,6 +127,69 @@
             "title": "shared.account.navigation.links.saved_credit_cards",
             "icon": "credit-card",
             "priority": 80
+          },
+          {
+            "id": "licenses",
+            "route": {
+              "name": "Licenses"
+            },
+            "title": "shared.account.navigation.links.licenses",
+            "icon": "shield",
+            "priority": 85
+          },
+          {
+            "id": "compliance",
+            "route": {
+              "name": "Compliance"
+            },
+            "title": "shared.account.navigation.links.compliance",
+            "icon": "check-circle",
+            "priority": 86
+          },
+          {
+            "id": "analytics",
+            "route": {
+              "name": "Analytics"
+            },
+            "title": "shared.account.navigation.links.analytics",
+            "icon": "chart",
+            "priority": 90
+          },
+          {
+            "id": "rfq",
+            "route": {
+              "name": "Rfq"
+            },
+            "title": "shared.account.navigation.links.rfq",
+            "icon": "clipboard-list",
+            "priority": 91
+          },
+          {
+            "id": "contracts",
+            "route": {
+              "name": "Contracts"
+            },
+            "title": "shared.account.navigation.links.contracts",
+            "icon": "document-text",
+            "priority": 92
+          },
+          {
+            "id": "payments",
+            "route": {
+              "name": "Payments"
+            },
+            "title": "shared.account.navigation.links.payments",
+            "icon": "credit-card",
+            "priority": 93
+          },
+          {
+            "id": "ai-insights",
+            "route": {
+              "name": "AiInsights"
+            },
+            "title": "shared.account.navigation.links.ai_insights",
+            "icon": "sparkles",
+            "priority": 95
           }
         ]
       },
@@ -268,6 +331,68 @@
             "title": "shared.layout.header.mobile.account_menu.saved_credit_cards",
             "icon": "credit-card",
             "priority": 70
+          },
+          {
+            "id": "licenses",
+            "route": {
+              "name": "Licenses"
+            },
+            "title": "shared.layout.header.mobile.account_menu.licenses",
+            "icon": "shield",
+            "priority": 75
+          },
+          {
+            "id": "compliance",
+            "route": {
+              "name": "Compliance"
+            },
+            "title": "shared.layout.header.mobile.account_menu.compliance",
+            "icon": "check-circle",
+            "priority": 76
+          },
+          {
+            "route": {
+              "name": "Analytics"
+            },
+            "title": "shared.layout.header.mobile.account_menu.analytics",
+            "icon": "chart",
+            "priority": 80
+          },
+          {
+            "id": "rfq",
+            "route": {
+              "name": "Rfq"
+            },
+            "title": "shared.layout.header.mobile.account_menu.rfq",
+            "icon": "clipboard-list",
+            "priority": 81
+          },
+          {
+            "id": "contracts",
+            "route": {
+              "name": "Contracts"
+            },
+            "title": "shared.layout.header.mobile.account_menu.contracts",
+            "icon": "document-text",
+            "priority": 82
+          },
+          {
+            "id": "payments",
+            "route": {
+              "name": "Payments"
+            },
+            "title": "shared.layout.header.mobile.account_menu.payments",
+            "icon": "credit-card",
+            "priority": 83
+          },
+          {
+            "id": "ai-insights",
+            "route": {
+              "name": "AiInsights"
+            },
+            "title": "shared.layout.header.mobile.account_menu.ai_insights",
+            "icon": "sparkles",
+            "priority": 85
           }
         ]
       },

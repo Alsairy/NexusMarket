@@ -11,4 +11,5 @@ export * from "./logger";
 export * from "./menu";
 export * from "./product";
 export * from "./properties";
+export * from "./rtl";
 export * from "./search";
