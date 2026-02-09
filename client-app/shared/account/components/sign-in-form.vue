@@ -5,7 +5,7 @@
       v-for="error in errors"
       :key="error.code"
       :data-test-id="`sign-in-page.sign-in-error-${error.code}-alert`"
-      class="mb-4"
+      class="mb-5"
       color="danger"
       size="sm"
       variant="outline-dark"
@@ -47,7 +47,7 @@
 
     <VcInput
       v-model="password"
-      class="mb-4"
+      class="mb-5"
       :label="$t('common.labels.password')"
       :placeholder="$t('common.placeholders.password')"
       :disabled="loading"
@@ -59,14 +59,14 @@
       test-id-input="sign-in-page.password-input"
     />
 
-    <div class="flex justify-between">
+    <div class="flex items-center justify-between">
       <VcCheckbox v-model="rememberMe" :disabled="loading">
         {{ $t("shared.account.sign_in_form.remember_me_label") }}
       </VcCheckbox>
 
       <router-link
         to="/forgot-password"
-        class="text-sm font-bold text-[--link-color] hover:text-[--link-hover-color]"
+        class="text-sm font-semibold text-primary transition-colors duration-200 hover:text-primary-600"
         data-test-id="sign-in-page.forgot-password-link"
       >
         {{ $t("shared.account.sign_in_form.forgot_password_link") }}
@@ -74,7 +74,7 @@
     </div>
 
     <!-- Form actions -->
-    <div class="mt-8 flex flex-wrap gap-4" :class="{ 'max-w-sm': !props.growButtons }">
+    <div class="mt-10 flex flex-wrap gap-4" :class="{ 'max-w-sm': !props.growButtons }">
       <VcButton :loading="loading" type="submit" class="flex-1 shrink" no-wrap data-test-id="sign-in-page.login-button">
         {{ $t("shared.account.sign_in_form.login_button") }}
       </VcButton>

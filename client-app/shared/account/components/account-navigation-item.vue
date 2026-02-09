@@ -53,7 +53,7 @@ interface IProps {
   }
 
   &__icon {
-    @apply mr-2.5 flex-none;
+    @apply me-2.5 flex-none;
 
     #{$active} &,
     #{$hover} & {

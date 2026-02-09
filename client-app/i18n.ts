@@ -42,6 +42,24 @@ export function createI18n(locale: string, currency: string, fallback?: { locale
           second: "numeric",
         },
       },
+      ar: {
+        short: {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+          calendar: "gregory",
+        },
+        long: {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          second: "numeric",
+          calendar: "gregory",
+          hour12: true,
+        },
+      },
     },
     fallbackLocale: fallback?.locale,
     messages: {

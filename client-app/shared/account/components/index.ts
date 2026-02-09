@@ -1,4 +1,9 @@
 export { default as AccountShell } from "./account-shell.vue";
+export * from "./ai-analytics";
+export * from "./analytics";
+export * from "./contracts";
+export * from "./payments";
+export * from "./rfq";
 export { default as AddressDropdownMenu } from "./address-dropdown-menu.vue";
 export { default as ChangePasswordForm } from "./change-password-form.vue";
 export { default as CreditCard } from "./credit-card.vue";

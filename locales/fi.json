@@ -376,7 +376,7 @@
       },
       "footer": {
         "version": "Versio",
-        "company_name": "Virto Commerce",
+        "company_name": "Nexus Market",
         "company_information_link_group": "Yrityksen tiedot",
         "about_us_link": "Tietoa meistä",
         "investor_relations_link": "Sijoittajasuhteet",
@@ -403,7 +403,7 @@
         "builder_io_page_link": "Builder.io-sivu",
         "all_rights_reserved": "Kaikki oikeudet pidätetään",
         "asp_net_e_commerce_platform": "ASP.NET-verkkokauppa-alusta {0}",
-        "by_virto": "Virto Commerce"
+        "by_virto": "Nexus Market"
       },
       "search_bar": {
         "enter_keyword_placeholder": "Hae",

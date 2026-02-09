@@ -21,15 +21,12 @@ query GetStore($domain: String!) {
     }
     settings {
       authenticationTypes
-      subscriptionEnabled
       taxCalculationEnabled
       anonymousUsersAllowed
       environmentName
       emailVerificationEnabled
       emailVerificationRequired
-      createAnonymousOrderEnabled
       seoLinkType
-      defaultSelectedForCheckout
       passwordRequirements {
         requireLowercase
         requireUppercase

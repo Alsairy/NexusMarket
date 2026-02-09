@@ -11,13 +11,13 @@
     <div class="relative">
       <VcLoaderOverlay :visible="changing" />
 
-      <div class="mb-4 flex justify-between text-base font-black">
+      <div class="mb-4 flex justify-between text-base font-semibold text-neutral-800">
         <span>{{ $t("common.labels.subtotal") }}</span>
 
         <span><VcPriceDisplay :value="cart.subTotal!" data-test-id="cart-subtotal-label" /></span>
       </div>
 
-      <div class="border-y py-2 text-base font-normal">
+      <div class="space-y-2 border-y border-neutral-200 py-3 text-sm font-normal text-neutral-600">
         <div class="flex justify-between">
           <component
             :is="hasDiscounts ? 'button' : 'span'"
@@ -27,7 +27,7 @@
             {{ $t("common.labels.discount") }}
             <VcIcon
               v-if="hasDiscounts"
-              class="ml-1 fill-primary print:hidden"
+              class="ms-1 fill-primary transition-transform duration-200 print:hidden"
               :name="discountsCollapsed ? 'chevron-down' : 'chevron-up'"
               size="xs"
             />
@@ -41,7 +41,7 @@
 
         <template v-if="hasDiscounts">
           <div class="print:block" :class="{ hidden: discountsCollapsed }">
-            <ul class="list-disc pl-5 text-neutral-400 print:text-[color:var(--color-additional-950)]">
+            <ul class="list-disc ps-5 text-neutral-400 print:text-[color:var(--color-additional-950)]">
               <li v-for="(discount, index) in cart.discounts" :key="index">
                 <div class="flex items-center justify-between">
                   <span class="text-sm">{{ discount.description || discount.coupon }}</span>
@@ -100,7 +100,7 @@
         </div>
       </div>
 
-      <div class="mt-4 flex justify-between text-base font-black">
+      <div class="mt-4 flex items-center justify-between text-lg font-black">
         <span>{{ $t("common.labels.total") }}</span>
 
         <span class="text-[--price-color] print:text-inherit">
@@ -111,7 +111,7 @@
 
     <slot name="footer" />
 
-    <div v-if="footnote" class="mt-4 text-xs font-normal text-neutral-400">
+    <div v-if="footnote" class="mt-4 text-xs font-normal leading-relaxed text-neutral-400">
       <slot name="footnote">
         {{ $t("common.messages.checkout_pricing_warning") }}
       </slot>

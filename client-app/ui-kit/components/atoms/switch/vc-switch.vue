@@ -209,10 +209,13 @@ function change() {
   }
 
   &__circle {
-    @apply relative block left-0 size-[--circle-size] bg-additional-50 rounded-full transition-[left];
+    @apply relative block size-[--circle-size] bg-additional-50 rounded-full;
+
+    inset-inline-start: 0;
+    transition: inset-inline-start 0.15s ease;
 
     #{$checked} & {
-      @apply left-[calc(100%-var(--circle-size))];
+      inset-inline-start: calc(100% - var(--circle-size));
     }
   }
 }

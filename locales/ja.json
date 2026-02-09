@@ -376,7 +376,7 @@
       },
       "footer": {
         "version": "Ver.",
-        "company_name": "Virto Commerce",
+        "company_name": "Nexus Market",
         "company_information_link_group": "会社情報",
         "about_us_link": "会社概要",
         "investor_relations_link": "IR情報",
@@ -403,7 +403,7 @@
         "builder_io_page_link": "Builder.ioページ",
         "all_rights_reserved": "All Rights Reserved.",
         "asp_net_e_commerce_platform": "ASP.NET eコマースプラットフォーム {0}",
-        "by_virto": "Virto Commerce"
+        "by_virto": "Nexus Market"
       },
       "search_bar": {
         "enter_keyword_placeholder": "検索",

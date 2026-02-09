@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex h-10 items-center gap-1 bg-[--header-top-bg-color] px-5 text-sm text-[--header-top-text-color] xl:gap-3 xl:px-11"
+    class="flex h-11 items-center gap-1 bg-[--header-top-bg-color] px-5 text-sm text-[--header-top-text-color] xl:gap-3 xl:px-12"
     data-test-id="main-layout.top-header"
   >
     <div class="flex min-w-0 shrink items-center gap-3">
@@ -103,7 +103,7 @@
 
           <div
             v-if="loginMenuVisible"
-            class="absolute right-0 top-full z-10 flex w-64 flex-col rounded-md bg-additional-50 text-additional-950 shadow-md"
+            class="absolute end-0 top-full z-10 flex w-64 flex-col rounded-md bg-additional-50 text-additional-950 shadow-md"
             data-test-id="main-layout.top-header.account-menu"
           >
             <div class="flex max-w-full items-center justify-between p-3">
@@ -122,7 +122,7 @@
 
               <VcButton
                 :title="$t('shared.layout.header.link_logout')"
-                class="ml-4"
+                class="ms-4"
                 variant="outline"
                 color="neutral"
                 size="xs"

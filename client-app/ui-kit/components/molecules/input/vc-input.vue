@@ -290,7 +290,7 @@ provide<VcInputContextType>("inputContext", {
   }
 
   &__container {
-    @apply flex items-stretch p-0.5 border border-neutral-400 rounded-[--radius] bg-additional-50 select-none;
+    @apply flex items-stretch p-0.5 border border-neutral-300 rounded-[--radius] bg-additional-50 select-none transition-colors duration-200;
 
     #{$sizeXs} & {
       @apply h-8 text-sm;
@@ -305,7 +305,7 @@ provide<VcInputContextType>("inputContext", {
     }
 
     &:has(input:focus) {
-      @apply ring ring-[--focus-color];
+      @apply border-[--color] ring ring-[--focus-color];
     }
 
     #{$error} & {
@@ -372,7 +372,7 @@ provide<VcInputContextType>("inputContext", {
     }
 
     &::placeholder {
-      @apply text-neutral-400 font-normal;
+      @apply text-neutral-300 font-normal;
 
       #{$error} & {
         @apply text-danger-400;

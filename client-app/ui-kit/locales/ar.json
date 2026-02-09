@@ -1,0 +1,132 @@
+{
+  "ui_kit": {
+    "buttons": {
+      "add_to_cart": "أضف إلى السلة",
+      "apply": "تطبيق",
+      "cancel": "إلغاء",
+      "close": "إغلاق",
+      "copy": "نسخ",
+      "deny": "رفض",
+      "filters": "تصفية",
+      "ok": "حسناً",
+      "remove_all": "إزالة الكل",
+      "remove_from_cart": "إزالة من السلة",
+      "remove_selected": "إزالة المحدد",
+      "see_more": "عرض المزيد",
+      "see_less": "عرض أقل",
+      "show_hide_password": "إظهار/إخفاء كلمة المرور",
+      "toggle_dropdown": "تبديل القائمة المنسدلة",
+      "update_cart": "تحديث السلة"
+    },
+    "accessibility": {
+      "close_alert": "إغلاق التنبيه",
+      "open_calendar": "فتح التقويم",
+      "product_quantity": "كمية المنتج",
+      "decrease_quantity": "تقليل الكمية",
+      "increase_quantity": "زيادة الكمية",
+      "variant_picker_group": "خيارات التنويعات",
+      "show_more_button": "عرض المزيد من الخيارات ({count})",
+      "sidebar": "الشريط الجانبي",
+      "close_chip": "إغلاق الشريحة",
+      "carousel_previous": "الشريحة السابقة",
+      "carousel_next": "الشريحة التالية",
+      "nav_previous": "السابق",
+      "nav_next": "التالي",
+      "nav_up": "أعلى",
+      "nav_down": "أسفل"
+    },
+    "date_selector": {
+      "min_date_error": "يجب أن يكون التاريخ في {min} أو بعده",
+      "max_date_error": "يجب أن يكون التاريخ في {max} أو قبله"
+    },
+    "labels": {
+      "not_available": "غير متوفر",
+      "price_per_item": "السعر لكل وحدة",
+      "product": "المنتج",
+      "product_quantity": "كمية المنتج",
+      "properties": "الخصائص",
+      "subtotal": "المجموع الفرعي",
+      "toggle_vendor_select": "تبديل اختيار المورّد",
+      "total": "المجموع",
+      "vendor": "المورّد"
+    },
+    "suffixes": {
+      "from": "من",
+      "per_item": " لكل وحدة"
+    },
+    "messages": {
+      "loading_text": "جارٍ التحميل...",
+      "no_results": "لم يتم العثور على نتائج"
+    },
+    "add_to_cart": {
+      "errors": {
+        "in_cart": "في السلة",
+        "already_in_cart_message": "تمت إضافة {0} إلى السلة بالفعل",
+        "enter_correct_number_message": "يُرجى إدخال رقم صالح",
+        "min": "الحد الأدنى للطلب {0} عنصر/عناصر",
+        "max": "الحد الأقصى للطلب {0} عنصر/عناصر",
+        "min_max": "اطلب من {0} إلى {1} عنصر/عناصر",
+        "min_not_available": "الحد الأدنى للطلب {0} عنصر/عناصر غير متوفر في المخزون",
+        "exact_qty": "يمكنك طلب {0} عنصر/عناصر",
+        "out_of_stock": "غير متوفر في المخزون",
+        "positive_number": "يجب أن تكون القيمة رقماً موجباً",
+        "integer_number": "يجب أن تكون القيمة عدداً صحيحاً",
+        "pack_size": "اطلب في عبوات من {0}"
+      }
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "select": {
+      "items_selected": "تم تحديد {0} عناصر"
+    },
+    "file": {
+      "progress": "تم {percent}",
+      "uploaded": "اكتمل الرفع",
+      "reload": "إعادة تحميل الملف",
+      "remove": "إزالة الملف"
+    },
+    "file_uploader": {
+      "drag_and_drop": "اسحب وأفلت الملف هنا أو",
+      "browse": "تصفح ملفاتك",
+      "requirements": "الملفات المتاحة للرفع بصيغ {formats}. يجب ألا يتجاوز حجم كل ملف {fileSize}. الحد الأقصى {maxFileCount} ملفات مسموح بها.",
+      "any_format": "أي صيغة",
+      "errors": {
+        "fix_to_continue": "أصلح أخطاء رفع الملفات للمتابعة.",
+        "has_max_file_count": "لقد قمت برفع الحد الأقصى المسموح به من الملفات. لا يمكن رفع المزيد.",
+        "tried_more_than_max_file_count": "حاولت رفع أكثر من العدد الأقصى المسموح به من الملفات."
+      }
+    },
+    "reach_limit": {
+      "end_list": "لقد وصلت إلى نهاية القائمة.",
+      "page_limit_filters": "لا مزيد من النتائج. يُرجى محاولة تغيير الفلاتر.",
+      "page_limit": "لا يمكن عرض المزيد من النتائج."
+    },
+    "slider": {
+      "tooltip": "{count} عناصر",
+      "aria_label": "شريط تمرير النطاق من {min} إلى {max}",
+      "legend": "شريط تمرير النطاق من {min} إلى {max}",
+      "start_input_label": "قيمة البداية (بين {min} و {max})",
+      "end_input_label": "قيمة النهاية (بين {min} و {max})",
+      "start_input_aria_label": "إدخال قيمة البداية، النطاق من {min} إلى {max}",
+      "end_input_aria_label": "إدخال قيمة النهاية، النطاق من {min} إلى {max}",
+      "start_input_help": "أدخل رقماً بين {min} و {max}، حجم الخطوة {step}",
+      "end_input_help": "أدخل رقماً بين {min} و {max}، حجم الخطوة {step}",
+      "column_aria_label": "عمود يحتوي على {count} عناصر، النطاق من {from} إلى {to}",
+      "current_value_announcement": "قيمة شريط التمرير: {start} إلى {end}، النطاق {min} إلى {max}",
+      "start_handle_label": "مقبض القيمة الدنيا",
+      "end_handle_label": "مقبض القيمة القصوى",
+      "start_handle_aria_label": "قيمة البداية {value}، النطاق {min} إلى {max}",
+      "end_handle_aria_label": "قيمة النهاية {value}، النطاق {min} إلى {max}"
+    },
+    "breadcrumbs": {
+      "aria_label": "التنقل عبر مسار التصفح"
+    },
+    "rating": {
+      "rating_label": "التقييم {value} من {maxValue}",
+      "read_only_button_aria_label": "التقييم {value} من {maxValue}، غير متاح للاختيار",
+      "set_rating_aria_label": "تعيين التقييم إلى {value} من {maxValue}"
+    }
+  }
+}

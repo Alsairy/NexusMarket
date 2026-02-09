@@ -3,7 +3,7 @@
     class="flex flex-col gap-2 bg-additional-50 lg:gap-4 lg:rounded-[--vc-radius] lg:border lg:border-neutral-100 lg:p-5 lg:pb-4 lg:shadow-md"
   >
     <VcProductImage :img-src="product.imgSrc" :images="product.images" :alt="product.name">
-      <div class="absolute -right-2.5 -top-2 z-[2]">
+      <div class="absolute -end-2.5 -top-2 z-[2]">
         <VcButton size="xs" variant="no-border" color="danger" icon="delete-2" @click="$emit('remove', product)" />
       </div>
     </VcProductImage>

@@ -9,7 +9,7 @@
       icon="outline-cart"
       :breadcrumbs="hideBreadcrumbs ? [] : breadcrumbs"
     >
-      <div class="mb-6 text-lg font-bold">
+      <div class="mb-6 text-lg font-semibold text-neutral-700">
         {{ $t("pages.cart.empty_cart_description") }}
       </div>
 
@@ -34,12 +34,12 @@
 
     <VcBreadcrumbs v-if="!hideBreadcrumbs" :items="breadcrumbs" class="max-lg:hidden" />
 
-    <VcTypography tag="h1" class="mb-5">
+    <VcTypography tag="h1" class="mb-6 tracking-tight">
       {{ title ?? $t("pages.cart.title") }}
     </VcTypography>
 
     <template v-if="!cart?.items?.length">
-      <VcWidget class="mb-10 mt-8" size="lg">
+      <VcWidget class="mb-10 mt-6" size="lg">
         <div class="text-lg font-bold">
           {{ $t("pages.cart.empty_cart_description") }}
         </div>
@@ -198,9 +198,9 @@
       <transition name="slide-fade-bottom">
         <div
           v-if="!loading && cart?.items?.length"
-          class="fixed bottom-0 left-0 z-10 w-full bg-additional-50 px-6 pb-5 pt-3 shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1),0px_0px_25px_-5px_rgba(0,0,0,0.2)] md:hidden print:hidden"
+          class="fixed bottom-0 start-0 z-10 w-full border-t border-neutral-200 bg-additional-50/95 px-6 pb-5 pt-4 shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.08),0px_-1px_6px_0px_rgba(0,0,0,0.04)] backdrop-blur-sm md:hidden print:hidden"
         >
-          <div class="text-end text-base font-bold text-neutral-950">
+          <div class="text-end text-lg font-bold text-neutral-950">
             <span class="me-1">{{ $t("common.labels.total") }}:</span>
 
             <VcPriceDisplay v-if="cart.total" :value="cart.total" />

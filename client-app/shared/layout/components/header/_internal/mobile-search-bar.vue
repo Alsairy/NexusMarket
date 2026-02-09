@@ -165,7 +165,7 @@ onMounted(() => {
   }
 
   &__content {
-    @apply absolute left-0 right-0 z-10 bg-[--mobile-search-bar-bg];
+    @apply absolute inset-x-0 z-10 bg-[--mobile-search-bar-bg];
   }
 
   &__wrapper {

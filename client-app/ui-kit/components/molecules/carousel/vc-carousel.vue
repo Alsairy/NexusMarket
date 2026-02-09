@@ -99,11 +99,11 @@ const paginationParams = computed<PaginationOptions | boolean>(() =>
     top: calc(50% - 1.75rem);
 
     &--prev {
-      @apply -left-5;
+      @apply -start-5;
     }
 
     &--next {
-      @apply -right-5;
+      @apply -end-5;
     }
 
     &--disabled {

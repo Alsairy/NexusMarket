@@ -26,7 +26,7 @@
   },
   "typescript.tsdk": "./node_modules/typescript/lib",
   "sonarlint.connectedMode.project": {
-    "connectionId": "virto-commerce",
-    "projectKey": "VirtoCommerce_vc-theme-b2b-vue"
+    "connectionId": "nexus-market",
+    "projectKey": "NexusMarket_nexus-market-frontend"
   }
 }

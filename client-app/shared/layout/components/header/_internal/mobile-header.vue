@@ -37,7 +37,7 @@
           <!-- region Right slot -->
           <component :is="customSlots.right" v-if="customSlots.right" />
 
-          <div v-else class="flex h-full flex-row items-center pr-4">
+          <div v-else class="flex h-full flex-row items-center pe-4">
             <a
               v-if="support_phone_number"
               :aria-label="$t('common.labels.support_phone_number')"
@@ -77,7 +77,7 @@
                     v-if="cart?.itemsQuantity"
                     variant="outline"
                     size="sm"
-                    class="absolute -right-2 -top-2 transition-transform"
+                    class="absolute -end-2 -top-2 transition-transform"
                     rounded
                     nowrap
                     max-width="none"
@@ -104,8 +104,8 @@
 
   <!-- Mobile menu -->
   <transition
-    enter-from-class="-translate-x-full"
-    leave-to-class="-translate-x-full"
+    :enter-from-class="isRtl ? 'translate-x-full' : '-translate-x-full'"
+    :leave-to-class="isRtl ? 'translate-x-full' : '-translate-x-full'"
     enter-active-class="will-change-transform"
     leave-active-class="will-change-transform"
   >
@@ -121,7 +121,7 @@
 <script setup lang="ts">
 import { syncRefs, useElementSize, useScrollLock } from "@vueuse/core";
 import { computed, ref } from "vue";
-import { useWhiteLabeling } from "@/core/composables";
+import { useRtl, useWhiteLabeling } from "@/core/composables";
 import { useModuleSettings } from "@/core/composables/useModuleSettings";
 import { MODULE_XAPI_KEYS } from "@/core/constants/modules";
 import { ROUTES } from "@/router/routes/constants";
@@ -145,6 +145,8 @@ const { searchBarVisible, toggleSearchBar } = useSearchBar();
 const { height } = useElementSize(headerElement);
 const { cart } = useShortCart();
 const { logoUrl } = useWhiteLabeling();
+
+const { isRtl } = useRtl();
 
 const placeholderStyle = computed<StyleValue | undefined>(() =>
   height.value ? { height: height.value + "px" } : undefined,

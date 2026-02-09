@@ -376,7 +376,7 @@
       },
       "footer": {
         "version": "Ver.",
-        "company_name": "Virto Commerce",
+        "company_name": "Nexus Market",
         "company_information_link_group": "Företagsuppgifter",
         "about_us_link": "Om oss",
         "investor_relations_link": "Investerarrelationer",
@@ -403,7 +403,7 @@
         "builder_io_page_link": "Builder.io-sida",
         "all_rights_reserved": "Alla rättigheter förbehållna",
         "asp_net_e_commerce_platform": "ASP.NET e-handelsplattform {0}",
-        "by_virto": "Virto Commerce"
+        "by_virto": "Nexus Market"
       },
       "search_bar": {
         "enter_keyword_placeholder": "Sök",

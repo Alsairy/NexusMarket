@@ -70,15 +70,34 @@ function isDisabledStep(step: IStepsItem) {
   $itemCompleted: "";
   $itemDisabled: "";
 
-  @apply flex flex-wrap gap-x-5 gap-y-2.5;
+  @apply flex flex-wrap items-center gap-y-2.5;
 
   &__item {
+    @apply flex items-center;
+
+    &:not(:last-child)::after {
+      content: "";
+      @apply block w-8 h-px bg-neutral-300 mx-2;
+
+      @media (min-width: theme("screens.md")) {
+        @apply w-12 mx-3;
+      }
+    }
+
     &--active {
       $itemActive: &;
+
+      &:not(:last-child)::after {
+        @apply bg-neutral-300;
+      }
     }
 
     &--completed {
       $itemCompleted: &;
+
+      &:not(:last-child)::after {
+        @apply bg-primary-300;
+      }
     }
 
     &--disabled {
@@ -87,31 +106,31 @@ function isDisabledStep(step: IStepsItem) {
   }
 
   &__step {
-    @apply flex items-center gap-1.5;
+    @apply flex items-center gap-2;
   }
 
   &__icon {
-    @apply flex shrink-0 items-center justify-center w-5 h-5 rounded-full
-    text-sm font-black text-additional-50 bg-neutral-400;
+    @apply flex shrink-0 items-center justify-center w-7 h-7 rounded-full
+    text-xs font-black text-additional-50 bg-neutral-300 transition-colors duration-200;
 
     #{$itemActive}:not(#{$itemDisabled}) & {
-      @apply bg-primary;
+      @apply bg-primary ring-4 ring-primary-100;
     }
 
     #{$itemCompleted}:not(#{$itemDisabled}) & {
-      @apply bg-success;
+      @apply bg-primary-600;
     }
   }
 
   &__text {
-    @apply text-sm font-bold text-neutral-600;
+    @apply text-sm font-semibold text-neutral-500 transition-colors duration-200;
 
     #{$itemActive}:not(#{$itemDisabled}) & {
-      @apply text-neutral-900;
+      @apply text-neutral-950 font-bold;
     }
 
     #{$itemCompleted}:not(#{$itemDisabled}) & {
-      @apply text-success;
+      @apply text-primary-700;
     }
   }
 }

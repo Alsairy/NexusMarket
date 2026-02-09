@@ -195,7 +195,7 @@
                   <template v-if="isPaymentAvailable && payment?.paymentMethod">
                     <VcImage
                       :src="payment.paymentMethod.logoUrl"
-                      class="mr-3.5 inline-block size-8 object-center md:size-9"
+                      class="me-3.5 inline-block size-8 object-center md:size-9"
                       lazy
                     />
 
@@ -205,7 +205,7 @@
                   <template v-else>
                     <VcImage
                       src="select-payment.svg"
-                      class="mr-3.5 inline-block size-10 object-center md:size-12"
+                      class="me-3.5 inline-block size-10 object-center md:size-12"
                       lazy
                     />
 

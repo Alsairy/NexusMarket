@@ -1,7 +1,7 @@
 {
-  "name": "Store",
-  "short_name": "Store",
-  "description": "Store description",
+  "name": "Nexus Market",
+  "short_name": "Nexus Market",
+  "description": "Nexus Market — B2B Marketplace Platform",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",

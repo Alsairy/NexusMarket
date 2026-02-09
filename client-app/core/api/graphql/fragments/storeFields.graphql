@@ -20,15 +20,12 @@ fragment storeResponseTypeFields on StoreResponseType {
   }
   settings {
     authenticationTypes
-    subscriptionEnabled
     taxCalculationEnabled
     anonymousUsersAllowed
     environmentName
     emailVerificationEnabled
     emailVerificationRequired
-    createAnonymousOrderEnabled
     seoLinkType
-    defaultSelectedForCheckout
     passwordRequirements {
       requireLowercase
       requireUppercase

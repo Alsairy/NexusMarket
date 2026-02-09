@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VcTypography tag="h1" class="lg:hidden">
+    <VcTypography tag="h1" class="tracking-tight lg:hidden">
       {{ $t("pages.account.dashboard.title") }}
     </VcTypography>
 
@@ -12,7 +12,7 @@
 
         <router-link
           :to="{ name: 'Orders' }"
-          class="hidden items-center gap-1 text-xs font-bold text-[--link-color] hover:text-[--link-hover-color] lg:flex"
+          class="hidden items-center gap-1 text-xs font-bold text-primary transition-colors duration-200 hover:text-primary-600 lg:flex"
         >
           {{ $t("pages.account.dashboard.last_orders_card.all_orders_link") }}
 
@@ -27,7 +27,7 @@
       </template>
     </VcWidget>
 
-    <div class="flex flex-col gap-y-5 lg:flex-row lg:gap-x-5 lg:gap-y-0">
+    <div class="flex flex-col gap-y-6 lg:flex-row lg:gap-x-6 lg:gap-y-0">
       <VcWidget :title="$t('pages.account.dashboard.monthly_report_card.title')" class="lg:w-0 lg:grow">
         <div class="flex content-center space-x-9 lg:space-x-4">
           <VcImage

@@ -36,9 +36,9 @@ export default defineConfig(({ command, mode }): UserConfig => {
     envPrefix: "APP_",
     publicDir: "./client-app/public",
     plugins: [
-      isServe
+      isServe && !process.env.NO_HTTPS
         ? mkcert({
-            force: true,
+            force: false,
             savePath: path.resolve(__dirname, ".certificates"),
             keyFileName: "private.pem",
             certFileName: "public.pem",

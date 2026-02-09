@@ -8,7 +8,7 @@
 .badges-wrapper {
   --radius: var(--badges-wrapper-radius, calc(var(--vc-radius, 0.5rem) + 2px));
 
-  @apply absolute -left-px -top-px flex items-center gap-1 z-[1] bg-additional-50 max-w-full rounded-br-[--radius] pb-0.5 pr-0.5 pl-px pt-px;
+  @apply absolute -start-px -top-px flex items-center gap-1 z-[1] bg-additional-50 max-w-full rounded-ee-[--radius] pb-0.5 pe-0.5 ps-px pt-px;
 
   &:empty {
     @apply hidden;
@@ -30,7 +30,7 @@
   }
 
   &::before {
-    @apply left-0 -bottom-[--radius];
+    @apply start-0 -bottom-[--radius];
   }
 }
 </style>

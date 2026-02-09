@@ -5,8 +5,8 @@
     <VcBreadcrumbs :items="breadcrumbs" class="hidden lg:block" />
 
     <!-- Title block -->
-    <div class="flex flex-col gap-2.5 lg:flex-row lg:justify-between">
-      <VcTypography tag="h1">
+    <div class="flex flex-col gap-3 lg:flex-row lg:justify-between">
+      <VcTypography tag="h1" class="tracking-tight">
         {{ $t("pages.account.order_details.title", [order?.number]) }}
       </VcTypography>
 
@@ -62,12 +62,12 @@
         <VcWidget id="order-data-widget" :title="$t('common.titles.order_data')" class="order-first mb-5">
           <div class="flex flex-col gap-1.5 text-sm">
             <div v-if="order.createdDate">
-              <span class="font-black"> {{ $t("common.labels.created") }}: </span>
+              <span class="font-semibold text-neutral-600"> {{ $t("common.labels.created") }}: </span>
               {{ $d(order.createdDate) }}
             </div>
 
             <div v-if="order.status" class="flex items-center gap-2">
-              <span class="font-black"> {{ $t("common.labels.status") }}: </span>
+              <span class="font-semibold text-neutral-600"> {{ $t("common.labels.status") }}: </span>
 
               <OrderStatus size="sm" :status="order.status" :display-value="order.statusDisplayValue" />
             </div>
@@ -88,7 +88,7 @@
           </div>
         </VcWidget>
 
-        <div class="space-y-5">
+        <div class="space-y-6">
           <!-- Order summary -->
           <OrderSummary
             :cart="order"

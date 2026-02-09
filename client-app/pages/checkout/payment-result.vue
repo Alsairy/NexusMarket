@@ -4,11 +4,11 @@
     :status-color="isPaymentSuccess ? 'success' : 'danger'"
     image="basket.jpg"
   >
-    <VcTypography tag="h1" class="order-first mb-3">
+    <VcTypography tag="h1" class="order-first mb-4 tracking-tight">
       {{ $t(isPaymentSuccess ? "pages.payment_result.title.success" : "pages.payment_result.title.failed") }}
     </VcTypography>
 
-    <div class="order-first mb-3 text-base font-bold">
+    <div class="order-first mb-4 text-lg font-bold text-neutral-800">
       {{
         $t(isPaymentSuccess ? "pages.payment_result.subtitle.success" : "pages.payment_result.subtitle.failed", [
           placedOrder!.number,
@@ -19,7 +19,7 @@
     <div>
       {{ $t(isPaymentSuccess ? "pages.payment_result.text.success" : "pages.payment_result.text.failed") }}
 
-      <div class="mt-10 flex flex-wrap justify-center gap-3 sm:justify-start">
+      <div class="mt-10 flex flex-wrap justify-center gap-4 sm:justify-start">
         <VcButton v-if="!isPaymentSuccess" :to="{ name: 'CheckoutPayment', replace: true }" prepend-icon="chevron-left">
           {{ $t("common.buttons.payment_details") }}
         </VcButton>

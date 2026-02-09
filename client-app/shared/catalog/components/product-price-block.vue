@@ -146,34 +146,34 @@ function print() {
 <style lang="scss" scoped>
 .product-price-block {
   &__actions {
-    @apply flex select-none divide-x print:hidden;
+    @apply flex select-none divide-x divide-neutral-200 border-t border-neutral-200 print:hidden;
   }
 
   &__add-to-list,
   &__add-to-compare,
   &__share-popover {
-    @apply w-1/5 hover:bg-neutral-50;
+    @apply w-1/5 transition-colors duration-200 hover:bg-primary-50;
   }
 
   &__share-button {
-    @apply flex size-full cursor-pointer items-center justify-center text-primary hover:bg-neutral-50;
+    @apply flex size-full cursor-pointer items-center justify-center text-neutral-500 transition-colors duration-200 hover:text-primary hover:bg-primary-50;
 
     &--active {
-      @apply text-neutral-400;
+      @apply text-primary bg-primary-50;
     }
   }
 
   &__mail-link,
   &__print-button {
-    @apply flex w-1/5 cursor-pointer items-center justify-center px-2 py-4 text-primary hover:bg-neutral-50;
+    @apply flex w-1/5 cursor-pointer items-center justify-center px-2 py-4 text-neutral-500 transition-colors duration-200 hover:text-primary hover:bg-primary-50;
   }
 
   &__share-content {
-    @apply rounded border bg-additional-50 p-5 shadow-lg;
+    @apply rounded-lg border border-neutral-200 bg-additional-50 p-5 shadow-xl;
   }
 
   &__share-header {
-    @apply flex justify-between text-lg font-bold;
+    @apply flex justify-between text-lg font-bold text-neutral-900;
   }
 
   &__share-title {
@@ -181,15 +181,15 @@ function print() {
   }
 
   &__share-close {
-    @apply -me-1 flex p-1 text-danger-400 hover:text-danger-700;
+    @apply -me-1 flex p-1.5 rounded-full text-neutral-400 transition-colors duration-200 hover:text-danger-600 hover:bg-danger-50;
   }
 
   &__share-services {
-    @apply mt-5 flex items-center space-x-6;
+    @apply mt-5 flex items-center space-x-5;
   }
 
   &__share-icon {
-    @apply rounded-sm;
+    @apply rounded-md transition-transform duration-200 hover:scale-110;
   }
 }
 </style>

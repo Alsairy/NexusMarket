@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import { useHead } from "@unhead/vue";
-import { markRaw, onMounted, computed } from "vue";
+import { markRaw, onMounted, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { useRoute, useRouter } from "vue-router";
 import favicon16 from "@/assets/icons/favicon-16x16.png";
@@ -28,6 +28,7 @@ import { useSearchBar } from "@/shared/layout/composables/useSearchBar";
 import { ModalHost } from "@/shared/modal";
 import { NotificationsHost } from "@/shared/notification";
 import { useWhiteLabeling } from "./core/composables";
+import { isRtlLanguage } from "./core/utilities/rtl";
 import { SecureLayout } from "./shared/layout";
 import type { Component } from "vue";
 import EnvironmentBadge from "@/shared/layout/components/environmentBadge/environment-badge.vue";
@@ -39,6 +40,24 @@ const { hideSearchBar, hideSearchDropdown } = useSearchBar();
 const { favIcons } = useWhiteLabeling();
 const { initRouteGuard } = useQueuedMutations();
 const i18n = useI18n();
+
+// Set document direction and lang attribute based on the current locale
+watch(
+  () => i18n.locale.value,
+  (locale) => {
+    const dir = isRtlLanguage(locale) ? "rtl" : "ltr";
+    document.documentElement.setAttribute("dir", dir);
+    document.documentElement.setAttribute("lang", locale);
+
+    // Apply Arabic font family when locale is RTL
+    if (isRtlLanguage(locale)) {
+      document.documentElement.classList.add("font-arabic");
+    } else {
+      document.documentElement.classList.remove("font-arabic");
+    }
+  },
+  { immediate: true },
+);
 
 // If favIcons.value is an empty array, the default favicon from index.html will be used.
 // The favicon will also NOT be updated in PWA mode (in manifest.json).
@@ -93,6 +112,8 @@ onMounted(() => {
 @use "assets/styles/main.scss";
 
 #popover-host {
-  @apply absolute bottom-0 right-0 z-[9999] size-0;
+  @apply absolute bottom-0 z-[9999] size-0;
+
+  inset-inline-end: 0;
 }
 </style>

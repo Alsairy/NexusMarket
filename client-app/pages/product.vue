@@ -18,29 +18,29 @@
       />
 
       <!-- Breadcrumbs -->
-      <VcBreadcrumbs class="mb-3" :items="breadcrumbs" />
+      <VcBreadcrumbs class="mb-4" :items="breadcrumbs" />
 
-      <VcTypography tag="h1">
+      <VcTypography tag="h1" class="tracking-tight text-neutral-950">
         {{ selectedVariationName || product.name }}
       </VcTypography>
 
-      <div class="mt-2 flex flex-wrap gap-1 max-sm:justify-between sm:gap-6">
+      <div class="mt-3 flex flex-wrap items-center gap-2 max-sm:justify-between sm:gap-6">
         <VcCopyText
           v-if="!product.hasVariations"
           :text="product.code"
           :notification="$t('pages.product.sku_copied_message')"
         >
-          <span class="text-base text-secondary-900">
+          <span class="text-sm text-neutral-500">
             {{ $t("pages.product.sku_label") }}
-            <span class="font-black">#{{ product.code }}</span>
+            <span class="font-semibold text-neutral-700">#{{ product.code }}</span>
           </span>
         </VcCopyText>
 
         <ProductRating v-if="productReviewsEnabled && product.rating" :rating="product.rating" />
       </div>
 
-      <VcLayout sidebar-position="right" sticky class="mt-5">
-        <div class="space-y-5 xl:space-y-6">
+      <VcLayout sidebar-position="right" sticky class="mt-6">
+        <div class="space-y-6 xl:space-y-8">
           <component
             :is="productInfoSection?.type"
             v-if="productInfoSection && !productInfoSection.hidden"
@@ -120,7 +120,7 @@
         :related-products="relatedProducts"
         :product-id="productId"
         :product-name="product.name"
-        class="mt-5 xl:mt-6"
+        class="mt-8 xl:mt-10"
       />
 
       <template v-if="recommendedProductsSection && !recommendedProductsSection.hidden">
@@ -133,7 +133,7 @@
           :model="model"
           :product-id="productId"
           :product-name="product.name"
-          class="mt-5 xl:mt-6"
+          class="mt-8 xl:mt-10"
         />
       </template>
     </VcContainer>
@@ -530,6 +530,6 @@ watch(
 
 <style scoped lang="scss">
 .vc-typography--variant--h1 {
-  @apply normal-case;
+  @apply normal-case text-3xl md:text-4xl font-bold leading-tight;
 }
 </style>

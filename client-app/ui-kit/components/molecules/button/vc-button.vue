@@ -236,7 +236,7 @@ defineExpose({
   $loaderIcon: "";
   $noWrap: "";
 
-  @apply relative inline-block px-[--px] rounded-[--radius] border-2 select-none text-center bg-[--bg-color] border-[--border-color] text-[--text-color];
+  @apply relative inline-block px-[--px] rounded-[--radius] border-2 select-none text-center bg-[--bg-color] border-[--border-color] text-[--text-color] transition-all duration-150;
 
   appearance: button;
 

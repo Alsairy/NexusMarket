@@ -62,7 +62,7 @@ usePageHead({
 <style lang="scss">
 .sign-in {
   &__form {
-    @apply order-first w-full;
+    @apply order-first w-full space-y-2;
 
     @media (width > theme("screens.sm")) {
       @apply pe-8;
@@ -74,7 +74,7 @@ usePageHead({
   }
 
   &__title {
-    @apply mb-3;
+    @apply mb-6 tracking-tight;
   }
 
   &__side {
@@ -98,7 +98,7 @@ usePageHead({
 
     &::before,
     &::after {
-      @apply content-[''] absolute h-px w-[calc(50%-2rem)] top-1/2 bg-neutral-300;
+      @apply content-[''] absolute h-px w-[calc(50%-2rem)] top-1/2 bg-neutral-200;
 
       @media (width > theme("screens.sm")) {
         @apply h-[calc(50%-2rem)] w-px;
@@ -106,7 +106,7 @@ usePageHead({
     }
 
     &::before {
-      @apply left-0;
+      @apply start-0;
 
       @media (width > theme("screens.sm")) {
         @apply top-2 left-1/2;
@@ -114,7 +114,7 @@ usePageHead({
     }
 
     &::after {
-      @apply right-0;
+      @apply end-0;
 
       @media (width > theme("screens.sm")) {
         @apply top-auto bottom-2 left-1/2;

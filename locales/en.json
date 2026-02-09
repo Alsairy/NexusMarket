@@ -344,7 +344,14 @@
             "orders": "@:common.links.orders",
             "saved_for_later": "Saved for later",
             "lists": "@:common.links.lists",
-            "saved_credit_cards": "@:common.links.saved_credit_cards"
+            "saved_credit_cards": "@:common.links.saved_credit_cards",
+            "licenses": "Licenses & Compliance",
+            "compliance": "Compliance Dashboard",
+            "analytics": "Analytics",
+            "rfq": "RFQ / Tendering",
+            "contracts": "Framework Contracts",
+            "payments": "Payment Hub",
+            "ai_insights": "AI Insights"
           },
           "corporate": "@:shared.account.navigation.corporate_title",
           "corporate_menu": {
@@ -376,7 +383,7 @@
       },
       "footer": {
         "version": "Ver.",
-        "company_name": "Virto Commerce",
+        "company_name": "Nexus Market",
         "company_information_link_group": "Company details",
         "about_us_link": "About us",
         "investor_relations_link": "Investor relations",
@@ -403,7 +410,7 @@
         "builder_io_page_link": "Builder.io page",
         "all_rights_reserved": "All rights reserved",
         "asp_net_e_commerce_platform": "ASP.NET ecommerce platform {0}",
-        "by_virto": "Virto Commerce"
+        "by_virto": "Nexus Market"
       },
       "search_bar": {
         "enter_keyword_placeholder": "Search",
@@ -456,7 +463,14 @@
           "list_details": "@:common.links.list_details",
           "company_info": "@:common.links.company_info",
           "company_members": "@:common.links.company_members",
-          "saved_credit_cards": "@:common.links.saved_credit_cards"
+          "saved_credit_cards": "@:common.links.saved_credit_cards",
+          "licenses": "Licenses & Compliance",
+          "compliance": "Compliance Dashboard",
+          "analytics": "Analytics",
+          "rfq": "RFQ / Tendering",
+          "contracts": "Framework Contracts",
+          "payments": "Payment Hub",
+          "ai_insights": "AI Insights"
         }
       },
       "change_password_form": {
@@ -990,29 +1004,51 @@
     },
     "home": {
       "meta": {
-        "title": "Home",
-        "keywords": "test, home, page, keywords",
-        "description": "Test home page description"
+        "title": "Nexus Market — B2B Industrial Marketplace",
+        "keywords": "B2B marketplace, industrial supplies, manufacturing, procurement, wholesale",
+        "description": "Nexus Market is the leading B2B marketplace for industrial and manufacturing supplies. Browse verified suppliers, competitive pricing, and streamlined procurement."
       },
-      "sign_in_form_title": "Sign in",
-      "main_banner_block": {
-        "message": "We can help you{br}make informed{br}and wise decisions",
-        "key_feature_1": "Result oriented",
-        "key_feature_2": "Trustworthy",
-        "key_feature_3": "Reliable"
+      "sign_in_form_title": "Sign in to your account",
+      "hero": {
+        "badge": "Trusted B2B Marketplace",
+        "title_line1": "Source ",
+        "title_highlight": "Industrial Supplies ",
+        "title_line2": "with Confidence",
+        "subtitle": "Connect with verified suppliers, access competitive pricing, and streamline your procurement — all in one powerful B2B marketplace.",
+        "cta_primary": "Browse Catalog",
+        "cta_secondary": "Create Account",
+        "trust_1": "Verified Suppliers",
+        "trust_2": "Secure Transactions",
+        "trust_3": "SAR Pricing",
+        "welcome_back": "Welcome back",
+        "quick_orders": "Quick Orders",
+        "browse_catalog": "Browse Catalog",
+        "my_cart": "My Cart",
+        "track_orders": "Track Orders"
       },
-      "feature_descriptions_block": {
-        "title": "Commercial management has never been that easy",
-        "feature_1": "Corporate account management",
-        "feature_2": "Quote management and price negotiation",
-        "feature_3": "Multiple stores, channels, and locations",
-        "feature_4": "B2B customization and price management"
+      "stats": {
+        "products": "Products Listed",
+        "categories": "Categories",
+        "verified": "Verified Suppliers",
+        "support": "Platform Support"
       },
-      "subscription_block": {
-        "subscribe_now": "Subscribe now!",
-        "info_message": "Stay&nbsp;connected&nbsp;to&nbsp;B2B&nbsp;store&nbsp;news!",
-        "email_placeholder": "Your email",
-        "subscribe_button": "Subscribe"
+      "features": {
+        "title": "Everything You Need to Procure Smarter",
+        "subtitle": "From sourcing to delivery, Nexus Market streamlines every step of your B2B procurement journey.",
+        "feature_1_title": "Corporate Account Management",
+        "feature_1_desc": "Manage multiple buyers, set approval workflows, and control spending limits across your organization.",
+        "feature_2_title": "Secure Payment & Invoicing",
+        "feature_2_desc": "Flexible payment terms, automated invoicing, and escrow protection for every transaction.",
+        "feature_3_title": "Verified Product Catalog",
+        "feature_3_desc": "Browse 188+ products across 53 categories with detailed specs, certifications, and compliance data.",
+        "feature_4_title": "Order Tracking & Analytics",
+        "feature_4_desc": "Real-time order tracking, spend analytics, and procurement insights to optimize your supply chain."
+      },
+      "cta": {
+        "title": "Ready to Transform Your Procurement?",
+        "subtitle": "Join hundreds of businesses already using Nexus Market to source industrial supplies smarter and faster.",
+        "button_primary": "Get Started Free",
+        "button_secondary": "Explore Products"
       }
     },
     "forgot_password": {
@@ -1263,6 +1299,562 @@
         "title": "Impersonation",
         "success": "Impersonation succeeded",
         "error": "Some problems occurred during impersonation. Check your permissions"
+      },
+      "licenses": {
+        "meta": {
+          "title": "Licenses & Compliance"
+        },
+        "title": "Licenses & Compliance",
+        "add_license_button": "Add License",
+        "overall_score": "Overall Score",
+        "active_licenses": "Active Licenses",
+        "expiring_soon": "Expiring Soon",
+        "checks_passed": "Checks Passed",
+        "licenses_section": "Licenses",
+        "compliance_checks_section": "Compliance Checks",
+        "no_licenses": "No licenses found. Add your first license to get started.",
+        "no_compliance_checks": "No compliance checks configured.",
+        "columns": {
+          "name": "Name",
+          "license_number": "License Number",
+          "type": "Type",
+          "issuing_authority": "Issuing Authority",
+          "expiry_date": "Expiry Date",
+          "status": "Status"
+        },
+        "status": {
+          "active": "Active",
+          "expired": "Expired",
+          "pending": "Pending",
+          "revoked": "Revoked",
+          "expiring_soon": "Expiring Soon"
+        },
+        "check_status": {
+          "passed": "Passed",
+          "failed": "Failed",
+          "pending": "Pending",
+          "not_applicable": "N/A"
+        },
+        "last_checked": "Last checked: {date}",
+        "next_due": "Next due: {date}",
+        "required_licenses": "Required licenses: {types}"
+      },
+      "compliance": {
+        "meta": {
+          "title": "Compliance Dashboard"
+        },
+        "title": "Compliance Dashboard",
+        "overall_compliance_score": "Overall Compliance Score",
+        "license_overview": "License Overview",
+        "checks_by_category": "Compliance Checks by Category",
+        "evidence_vault": "Evidence Document Vault",
+        "expiring_alerts": "Expiring Items Alerts",
+        "active_label": "Active",
+        "expiring_label": "Expiring",
+        "expired_label": "Expired",
+        "pending_label": "Pending",
+        "passed_label": "Passed",
+        "failed_label": "Failed",
+        "no_documents": "No evidence documents uploaded yet.",
+        "no_expiring": "No expiring or expired items.",
+        "document_status": {
+          "uploaded": "Uploaded",
+          "verified": "Verified",
+          "rejected": "Rejected"
+        },
+        "file_size": "{size}",
+        "uploaded_by": "Uploaded by {name}",
+        "uploaded_at": "Uploaded on {date}"
+      },
+      "analytics": {
+        "meta": {
+          "title": "Analytics"
+        },
+        "title": "Analytics Dashboard",
+        "periods": {
+          "7d": "7D",
+          "30d": "30D",
+          "90d": "90D",
+          "12m": "12M"
+        },
+        "period_selector": {
+          "last_7_days": "Last 7 days",
+          "last_30_days": "Last 30 days",
+          "last_90_days": "Last 90 days",
+          "last_year": "Last year"
+        },
+        "metrics": {
+          "total_revenue": "Total Revenue",
+          "total_orders": "Total Orders",
+          "avg_order_value": "Avg. Order Value",
+          "fulfillment_rate": "Fulfillment Rate",
+          "products_sold": "Products Sold"
+        },
+        "sales_overview_title": "Sales Overview",
+        "sales_overview": {
+          "title": "Sales Overview",
+          "total_revenue": "Total Revenue",
+          "total_orders": "Total Orders",
+          "avg_daily_revenue": "Avg. Daily Revenue"
+        },
+        "top_products_title": "Top Products",
+        "top_products": {
+          "title": "Top Products",
+          "product": "Product",
+          "sku": "SKU",
+          "qty_sold": "Qty Sold",
+          "revenue": "Revenue"
+        },
+        "spend_by_category_title": "Spend by Category",
+        "spend_by_category": {
+          "title": "Spend by Category"
+        },
+        "spend": {
+          "raw_materials": "Raw Materials",
+          "equipment": "Equipment",
+          "safety_supplies": "Safety Supplies",
+          "packaging": "Packaging",
+          "office_supplies": "Office Supplies",
+          "services": "Services"
+        },
+        "order_trends_title": "Order Trends",
+        "order_trends": {
+          "title": "Order Trends",
+          "period": "Period",
+          "total": "Total",
+          "completed": "Completed",
+          "cancelled": "Cancelled",
+          "pending": "Pending",
+          "breakdown": "Breakdown"
+        },
+        "performance_title": "Performance Scorecard",
+        "performance": {
+          "order_fulfillment": "Order Fulfillment",
+          "delivery_timeliness": "Delivery Timeliness",
+          "customer_satisfaction": "Customer Satisfaction",
+          "compliance_score": "Compliance Score",
+          "response_time": "Response Time",
+          "benchmark": "Benchmark"
+        },
+        "no_data": "No analytics data available for this period."
+      },
+      "rfq": {
+        "meta": {
+          "title": "RFQ / Tendering"
+        },
+        "title": "Request for Quotation",
+        "create_rfq": "Create RFQ",
+        "status_filter": {
+          "all": "All",
+          "draft": "Draft",
+          "published": "Published",
+          "evaluating": "Evaluating",
+          "awarded": "Awarded",
+          "closed": "Closed",
+          "cancelled": "Cancelled"
+        },
+        "kpi": {
+          "total_rfqs": "Total RFQs",
+          "open_rfqs": "Open RFQs",
+          "avg_bids": "Avg. Bids per RFQ",
+          "total_awarded": "Total Awarded Value"
+        },
+        "table": {
+          "reference": "Reference #",
+          "title": "Title",
+          "status": "Status",
+          "deadline": "Deadline",
+          "bids": "Bids",
+          "budget": "Budget",
+          "actions": "Actions",
+          "empty": "No RFQs found. Create your first request for quotation."
+        },
+        "detail": {
+          "back": "Back to RFQs",
+          "reference": "Reference: {ref}",
+          "deadline": "Deadline: {date}",
+          "created_by": "Created by: {name}",
+          "sector": "Sector: {sector}",
+          "tabs": {
+            "overview": "Overview",
+            "bids": "Bids",
+            "evaluation": "Evaluation"
+          },
+          "overview": {
+            "description_title": "Description",
+            "line_items_title": "Line Items",
+            "requirements_title": "Requirements"
+          },
+          "line_items": {
+            "product": "Product",
+            "description": "Description",
+            "quantity": "Qty",
+            "unit": "Unit",
+            "specifications": "Specifications",
+            "target_price": "Target Price"
+          },
+          "requirements": {
+            "category": "Category",
+            "description": "Description",
+            "mandatory": "Mandatory",
+            "weight": "Weight",
+            "technical": "Technical",
+            "commercial": "Commercial",
+            "compliance": "Compliance",
+            "delivery": "Delivery"
+          },
+          "bids_section": {
+            "title": "Received Bids ({count})",
+            "empty": "No bids received yet.",
+            "supplier": "Supplier",
+            "amount": "Total Amount",
+            "delivery": "Delivery (days)",
+            "submitted": "Submitted",
+            "technical_score": "Technical",
+            "commercial_score": "Commercial",
+            "compliance_score": "Compliance",
+            "overall_score": "Overall Score",
+            "attachments": "Attachments",
+            "notes": "Notes"
+          },
+          "evaluation": {
+            "title": "Bid Evaluation Matrix",
+            "criterion": "Criterion",
+            "weight": "Weight",
+            "recommendation": "Recommendation",
+            "recommended": "Recommended",
+            "total_score": "Total Score",
+            "amount": "Amount",
+            "rank": "Rank",
+            "reasoning": "Reasoning"
+          },
+          "actions": {
+            "publish": "Publish RFQ",
+            "evaluate": "Start Evaluation",
+            "award": "Award Contract",
+            "close": "Close RFQ",
+            "cancel": "Cancel RFQ"
+          }
+        },
+        "status": {
+          "draft": "Draft",
+          "published": "Published",
+          "evaluating": "Evaluating",
+          "awarded": "Awarded",
+          "closed": "Closed",
+          "cancelled": "Cancelled"
+        },
+        "bid_status": {
+          "submitted": "Submitted",
+          "under_review": "Under Review",
+          "shortlisted": "Shortlisted",
+          "accepted": "Accepted",
+          "rejected": "Rejected",
+          "withdrawn": "Withdrawn"
+        }
+      },
+      "contracts": {
+        "meta": {
+          "title": "Framework Contracts"
+        },
+        "title": "Framework Contracts",
+        "new_contract": "New Contract",
+        "kpi": {
+          "active_contracts": "Active Contracts",
+          "total_committed": "Total Committed Value",
+          "avg_fulfillment": "Avg. Fulfillment Rate",
+          "expiring_soon": "Expiring Soon"
+        },
+        "status_filter": {
+          "all": "All",
+          "draft": "Draft",
+          "active": "Active",
+          "suspended": "Suspended",
+          "expired": "Expired",
+          "terminated": "Terminated"
+        },
+        "table": {
+          "contract_number": "Contract #",
+          "title": "Title",
+          "supplier": "Supplier",
+          "status": "Status",
+          "period": "Period",
+          "value": "Value / Consumed",
+          "actions": "Actions",
+          "empty": "No framework contracts found."
+        },
+        "demand_pools": {
+          "title": "Demand Pools",
+          "description": "Join collective purchasing pools for better pricing",
+          "category": "Category",
+          "total_demand": "Total Demand",
+          "participants": "Participants",
+          "current_price": "Current Best Price",
+          "next_tier": "Next Tier: {qty} units at {price}",
+          "expires": "Expires: {date}",
+          "join": "Join Pool",
+          "empty": "No active demand pools."
+        },
+        "detail": {
+          "back": "Back to Contracts",
+          "contract_number": "Contract: {number}",
+          "supplier": "Supplier: {name}",
+          "period": "{start} — {end}",
+          "auto_renewal": "Auto-renewal enabled",
+          "tabs": {
+            "line_items": "Line Items",
+            "call_off_orders": "Call-Off Orders",
+            "performance": "Performance"
+          },
+          "summary": {
+            "total_value": "Total Value",
+            "consumed": "Consumed",
+            "remaining": "Remaining",
+            "line_items_count": "Line Items",
+            "days_remaining": "Days Remaining"
+          },
+          "line_items": {
+            "product": "Product",
+            "sku": "SKU",
+            "unit": "Unit",
+            "committed": "Committed Qty",
+            "fulfilled": "Fulfilled Qty",
+            "current_price": "Current Price",
+            "pricing_tiers": "Pricing Tiers"
+          },
+          "pricing_tiers": {
+            "range": "Qty Range",
+            "unit_price": "Unit Price",
+            "discount": "Discount %",
+            "current_tier": "Current Tier"
+          },
+          "call_off_orders": {
+            "title": "Call-Off Orders",
+            "create": "Create Call-Off Order",
+            "order_number": "Order #",
+            "date": "Date",
+            "status": "Status",
+            "items": "Items",
+            "total": "Total",
+            "empty": "No call-off orders yet.",
+            "status_pending": "Pending",
+            "status_approved": "Approved",
+            "status_fulfilled": "Fulfilled",
+            "status_cancelled": "Cancelled"
+          },
+          "performance": {
+            "title": "Performance Metrics",
+            "metric": "Metric",
+            "target": "Target",
+            "actual": "Actual",
+            "status": "Status",
+            "status_met": "Met",
+            "status_at_risk": "At Risk",
+            "status_breached": "Breached",
+            "penalty_clause": "Penalty Clause"
+          }
+        },
+        "status": {
+          "draft": "Draft",
+          "active": "Active",
+          "suspended": "Suspended",
+          "expired": "Expired",
+          "terminated": "Terminated"
+        }
+      },
+      "payments": {
+        "meta": {
+          "title": "Payment Hub"
+        },
+        "title": "Payment Hub",
+        "overview": {
+          "total_escrow": "Total in Escrow",
+          "total_milestone": "Milestone Payments",
+          "total_factored": "Invoice Factoring",
+          "total_bnpl": "BNPL Plans",
+          "pending_releases": "Pending Releases",
+          "disputes": "Disputes"
+        },
+        "tabs": {
+          "escrow": "Escrow",
+          "milestones": "Milestones",
+          "factoring": "Invoice Factoring",
+          "bnpl": "Buy Now, Pay Later"
+        },
+        "escrow": {
+          "order_number": "Order #",
+          "buyer": "Buyer",
+          "seller": "Seller",
+          "amount": "Amount",
+          "status": "Status",
+          "created": "Created",
+          "release_condition": "Release Condition",
+          "actions": "Actions",
+          "release": "Release Funds",
+          "dispute": "Dispute",
+          "empty": "No escrow transactions.",
+          "status_pending": "Pending",
+          "status_funded": "Funded",
+          "status_in_progress": "In Progress",
+          "status_released": "Released",
+          "status_disputed": "Disputed",
+          "status_refunded": "Refunded"
+        },
+        "milestones": {
+          "contract": "Contract",
+          "total": "Total Amount",
+          "released": "Released",
+          "pending": "Pending",
+          "progress": "Progress",
+          "milestone_count": "{completed} of {total} milestones completed",
+          "empty": "No milestone payment plans.",
+          "timeline": {
+            "name": "Milestone",
+            "amount": "Amount",
+            "due_date": "Due Date",
+            "completed": "Completed",
+            "approved": "Approved",
+            "evidence": "Evidence",
+            "approve": "Approve",
+            "status_pending": "Pending",
+            "status_in_progress": "In Progress",
+            "status_completed": "Completed",
+            "status_approved": "Approved",
+            "status_disputed": "Disputed"
+          }
+        },
+        "factoring": {
+          "invoice_number": "Invoice #",
+          "buyer": "Buyer",
+          "invoice_amount": "Invoice Amount",
+          "advance_rate": "Advance Rate",
+          "factored_amount": "Factored Amount",
+          "fee": "Fee",
+          "status": "Status",
+          "due_date": "Due Date",
+          "submit": "Submit for Factoring",
+          "empty": "No invoice factoring requests.",
+          "status_submitted": "Submitted",
+          "status_approved": "Approved",
+          "status_funded": "Funded",
+          "status_settled": "Settled",
+          "status_rejected": "Rejected"
+        },
+        "bnpl": {
+          "order_number": "Order #",
+          "total_amount": "Total Amount",
+          "installments": "Installments",
+          "paid": "{paid} of {total} paid",
+          "next_payment": "Next Payment",
+          "remaining": "Remaining Balance",
+          "interest_rate": "Interest Rate",
+          "empty": "No BNPL plans.",
+          "status_active": "Active",
+          "status_completed": "Completed",
+          "status_defaulted": "Defaulted",
+          "status_cancelled": "Cancelled"
+        }
+      },
+      "ai_insights": {
+        "meta": {
+          "title": "AI-Powered Insights"
+        },
+        "title": "AI-Powered Insights",
+        "run_analysis": "Run Analysis",
+        "last_analysis": "Last analysis: {date}",
+        "summary": {
+          "total_outliers": "Price Outliers",
+          "critical_risks": "Critical Risks",
+          "demand_changes": "Demand Changes",
+          "catalog_issues": "Catalog Issues",
+          "unacknowledged": "Unread Insights",
+          "last_run": "Last Analysis"
+        },
+        "price_monitoring": {
+          "title": "Price Monitoring",
+          "product": "Product",
+          "current_price": "Current Price",
+          "market_avg": "Market Avg.",
+          "deviation": "Deviation",
+          "direction": "Direction",
+          "above": "Above",
+          "below": "Below",
+          "supplier": "Supplier",
+          "severity": "Severity",
+          "recommendation": "Recommendation",
+          "empty": "No price outliers detected."
+        },
+        "risk_assessment": {
+          "title": "Supplier Risk Assessment",
+          "supplier": "Supplier",
+          "overall_score": "Overall Score",
+          "risk_level": "Risk Level",
+          "risk_low": "Low Risk",
+          "risk_medium": "Medium Risk",
+          "risk_high": "High Risk",
+          "risk_critical": "Critical Risk",
+          "trend": "Trend",
+          "trend_improving": "Improving",
+          "trend_stable": "Stable",
+          "trend_declining": "Declining",
+          "factors": {
+            "delivery_reliability": "Delivery Reliability",
+            "quality_score": "Quality Score",
+            "financial_health": "Financial Health",
+            "compliance_score": "Compliance Score",
+            "diversification_risk": "Diversification Risk"
+          },
+          "alerts": "Alerts",
+          "empty": "No supplier risk data available."
+        },
+        "demand_forecast": {
+          "title": "Demand Forecasting",
+          "category": "Product Category",
+          "current_demand": "Current Demand",
+          "forecasted_demand": "Forecasted Demand",
+          "change": "Change",
+          "confidence": "Confidence",
+          "period": "Period",
+          "seasonal_factor": "Seasonal Factor",
+          "recommendation": "Recommendation",
+          "empty": "No demand forecast data available."
+        },
+        "catalog_health": {
+          "title": "Catalog Health",
+          "type": "Issue Type",
+          "type_duplicate": "Duplicate",
+          "type_mismatch": "Mismatch",
+          "type_incomplete": "Incomplete",
+          "type_substitution": "Substitution",
+          "product": "Product",
+          "related_product": "Related Product",
+          "description": "Description",
+          "confidence": "Confidence",
+          "suggestion": "Suggestion",
+          "status": "Status",
+          "status_pending": "Pending",
+          "status_accepted": "Accepted",
+          "status_dismissed": "Dismissed",
+          "accept": "Accept",
+          "dismiss": "Dismiss",
+          "empty": "No catalog issues detected."
+        },
+        "procurement_insights": {
+          "title": "Procurement Insights",
+          "category_pricing": "Pricing",
+          "category_risk": "Risk",
+          "category_demand": "Demand",
+          "category_catalog": "Catalog",
+          "category_procurement": "Procurement",
+          "severity_info": "Info",
+          "severity_warning": "Warning",
+          "severity_critical": "Critical",
+          "impact": "Impact",
+          "suggested_action": "Suggested Action",
+          "acknowledge": "Acknowledge",
+          "acknowledged": "Acknowledged",
+          "empty": "No procurement insights available."
+        }
       }
     },
     "company": {
@@ -1462,57 +2054,65 @@
     },
     "demo_landing": {
       "meta": {
-        "title": "Demo landing"
+        "title": "Nexus Market — Industrial Marketplace"
       },
-      "header": "Printers market overview",
-      "primary_block": {
-        "primary_text": "Commercial management has never been that easy",
-        "secondary_text": "Anything you dream about may come true right at the moment you decide to win",
-        "first_button": "Learn more",
-        "second_button": "Get in touch",
-        "image_alt": "A laptop on a table"
+      "header": "Industrial Marketplace",
+      "hero": {
+        "badge": "New: AI-Powered Procurement",
+        "title_line1": "The Smarter Way to ",
+        "title_highlight": "Source & Procure",
+        "subtitle": "Nexus Market connects buyers and suppliers in a regulated B2B ecosystem with built-in compliance, transparent pricing, and intelligent procurement tools.",
+        "cta_primary": "Start Sourcing",
+        "cta_secondary": "Watch Demo"
       },
-      "secondary_block": {
-        "primary_text": "Readability is a primary concern of a designer",
-        "secondary_text": "Readability is a critical focus for designers as it directly impacts how effectively a message is communicated through design.  It involves choices such as fonts, spacing, and layout to ensure that content is easily understood. An emphasis on readability enhances user engagement and the overall success of a design."
+      "stats": {
+        "stat_1_value": "188+",
+        "stat_1_label": "Products",
+        "stat_2_value": "53",
+        "stat_2_label": "Categories",
+        "stat_3_value": "99.9%",
+        "stat_3_label": "Uptime",
+        "stat_4_value": "SAR",
+        "stat_4_label": "Local Currency"
       },
-      "features_block": {
-        "primary_text": "Explore the features",
-        "secondary_text": "With a crystal-clear camera, real-time HD video display, and intuitive flight controls, what will you create?",
+      "features": {
+        "title": "Built for Industrial Procurement",
+        "subtitle": "Purpose-built features that make B2B buying and selling effortless.",
         "feature_1": {
-          "title": "Epic aerial video",
-          "text": "With the Phantom 3 Professional, you can shoot 4K videos at up to 30 frames per second and capture 12MP photos."
+          "title": "Smart Catalog Search",
+          "text": "Find exactly what you need with AI-powered search across 53 categories of industrial and manufacturing supplies."
         },
         "feature_2": {
-          "title": "Live HD View",
-          "text": "Simply connect your phone or tablet and showcase 720p HD view of everything your camera sees."
+          "title": "Compliance Built-In",
+          "text": "Automated license verification, certification tracking, and regulatory compliance for every transaction."
         },
         "feature_3": {
-          "title": "Complete Control",
-          "text": " Keep your Phantom 3 fully under your command while accessing the most used features right on the included remote"
+          "title": "Secure Transactions",
+          "text": "Escrow-protected payments, flexible invoicing terms, and complete transaction transparency."
         }
       },
-      "booking_block": {
-        "message": "Book a free ecommerce consulting session",
-        "first_button": "Learn more",
-        "second_button": "Get in touch"
+      "categories": {
+        "title": "Browse by Category",
+        "subtitle": "Explore our curated selection of industrial and manufacturing categories."
       },
       "products_block": {
-        "title": "Printers",
-        "message": "Printers are necessary for creating physical documents, records, and communication materials across various industries and sectors",
-        "choose_button": "Choose"
+        "title": "Featured Products",
+        "message": "Discover top-rated industrial supplies from verified manufacturers",
+        "choose_button": "View Details"
       },
-      "after_products_block": {
-        "primary_text": "The Dynamic World of Business-to-Business Sales",
-        "secondary_text": "The modern business world is a world of sales. Companies, both large and small, actively engage with each other, offering their products and services. Successful businesses build long-term relationships, understanding customer needs and reacting to market changes. The success and survival of companies depend on effective sales. This dynamic world requires adaptation, innovation, and continuous learning to meet the demands of modern business partners."
+      "cta": {
+        "title": "Start Procuring Smarter Today",
+        "subtitle": "Create your free account and access the full catalog of verified industrial supplies.",
+        "button_primary": "Create Free Account",
+        "button_secondary": "Contact Sales"
       },
       "subscription_block": {
-        "primary_text": "Subscribe to our promotions",
-        "secondary_text": "Be among the first to hear about upcoming events",
-        "input_placeholder": "tanya.hill{'@'}example.com",
-        "agreement_checkbox_label": "By clicking \"Submit\", I hereby agree to the",
-        "terms_and_policy_link": "Terms and Policy",
-        "submit_button": "@:common.buttons.submit"
+        "primary_text": "Stay Updated",
+        "secondary_text": "Get the latest product listings, pricing updates, and procurement insights delivered to your inbox.",
+        "input_placeholder": "Enter your business email",
+        "agreement_checkbox_label": "By clicking \"Submit\", I agree to the ",
+        "terms_and_policy_link": "Terms and Privacy Policy",
+        "submit_button": "Subscribe"
       }
     },
     "compare": {
@@ -1570,6 +2170,376 @@
     },
     "brand": {
       "products_title": "Products"
+    },
+    "supplier": {
+      "register": {
+        "meta": {
+          "title": "Become a Supplier"
+        },
+        "hero_title": "Become a Nexus Market Supplier",
+        "hero_description": "Join our regulated B2B marketplace and connect with verified buyers across multiple sectors. Grow your business with compliance-backed trading.",
+        "start_button": "Start Registration",
+        "benefits_title": "Why Sell on Nexus Market?",
+        "benefit_1_title": "Global Reach",
+        "benefit_1_description": "Access verified buyers across industries and regions through our trusted marketplace.",
+        "benefit_2_title": "Secure Payments",
+        "benefit_2_description": "Protected transactions with escrow support and milestone-based payments.",
+        "benefit_3_title": "Analytics Dashboard",
+        "benefit_3_description": "Track sales performance, buyer trends, and market insights in real-time.",
+        "benefit_4_title": "Dedicated Support",
+        "benefit_4_description": "Get onboarding assistance and dedicated account management from our team.",
+        "cta_title": "Ready to Get Started?",
+        "cta_description": "Complete the supplier onboarding process to start selling on Nexus Market. Our team will review your application within 2 business days."
+      },
+      "onboarding": {
+        "meta": {
+          "title": "Supplier Onboarding"
+        },
+        "title": "Supplier Onboarding",
+        "submit_button": "Submit Application",
+        "steps": {
+          "business_info": "Business Info",
+          "documents": "Documents",
+          "license_verification": "Licenses",
+          "review": "Review & Submit"
+        },
+        "business_info": {
+          "title": "Business Information",
+          "description": "Provide your company details so we can verify your business.",
+          "company_name": "Company Name",
+          "company_name_placeholder": "Enter your company name",
+          "registration_number": "Registration Number",
+          "registration_number_placeholder": "Enter registration number",
+          "tax_id": "Tax ID",
+          "tax_id_placeholder": "Enter tax identification number",
+          "industry": "Industry / Sector",
+          "industry_placeholder": "Select your industry",
+          "company_size": "Company Size",
+          "company_size_placeholder": "Select company size",
+          "website": "Website (Optional)",
+          "website_placeholder": "https://example.com",
+          "description": "Business Description",
+          "description_placeholder": "Briefly describe your business and products",
+          "address": "Business Address",
+          "address_placeholder": "Enter your business address",
+          "city": "City",
+          "city_placeholder": "Enter city",
+          "country": "Country",
+          "country_placeholder": "Select country",
+          "postal_code": "Postal Code",
+          "postal_code_placeholder": "Enter postal code",
+          "contact_name": "Contact Person",
+          "contact_name_placeholder": "Full name",
+          "contact_email": "Contact Email",
+          "contact_email_placeholder": "email@example.com",
+          "contact_phone": "Contact Phone",
+          "contact_phone_placeholder": "+1 (555) 000-0000"
+        },
+        "documents": {
+          "title": "Required Documents",
+          "description": "Upload the necessary documents to verify your business credentials.",
+          "upload_button": "Upload File",
+          "replace_button": "Replace",
+          "remove_button": "Remove",
+          "required": "Required",
+          "optional": "Optional",
+          "max_file_size": "Max file size: {size}",
+          "accepted_formats": "Accepted: PDF, JPG, PNG",
+          "upload_success": "Document uploaded successfully",
+          "upload_error": "Failed to upload document. Please try again."
+        },
+        "licenses": {
+          "title": "License Verification",
+          "description": "Add your business licenses and certifications for verification.",
+          "add_license_button": "Add License",
+          "no_licenses": "No licenses added yet. Click 'Add License' to get started.",
+          "license_type": "License Type",
+          "license_type_placeholder": "Select license type",
+          "license_number": "License Number",
+          "license_number_placeholder": "Enter license number",
+          "issuing_authority": "Issuing Authority",
+          "issuing_authority_placeholder": "Enter issuing authority",
+          "issue_date": "Issue Date",
+          "expiry_date": "Expiry Date",
+          "status_verified": "Verified",
+          "status_pending": "Pending",
+          "status_failed": "Failed",
+          "remove_license": "Remove"
+        },
+        "review": {
+          "title": "Review & Submit",
+          "description": "Review your application details before submitting.",
+          "business_info_section": "Business Information",
+          "documents_section": "Documents",
+          "licenses_section": "Licenses",
+          "edit": "Edit",
+          "uploaded": "Uploaded",
+          "not_uploaded": "Not Uploaded",
+          "submitted_message": "Application Submitted Successfully!",
+          "submitted_description": "Your supplier application has been submitted. Our team will review it within 2 business days. You will be notified by email."
+        }
+      }
+    },
+    "regulator": {
+      "dashboard": {
+        "meta": {
+          "title": "Regulator Dashboard"
+        },
+        "title": "Regulator Dashboard",
+        "overview_section": "Marketplace Overview",
+        "sector_spend_title": "Sector Spend Analysis",
+        "sector_spend_description": "Procurement spend breakdown by sector",
+        "price_benchmarks_title": "Price Benchmarks",
+        "price_benchmarks_description": "Price analysis across product categories",
+        "supplier_concentration_title": "Supplier Concentration",
+        "supplier_concentration_description": "Market concentration analysis by sector",
+        "compliance_rates_title": "Compliance Rates by Sector",
+        "compliance_rates_description": "Regulatory compliance rates across sectors",
+        "sector_label": "Sector",
+        "total_spend_label": "Total Spend",
+        "orders_label": "Orders",
+        "suppliers_label": "Suppliers",
+        "avg_order_value_label": "Avg. Order Value",
+        "pct_of_total_label": "% of Total",
+        "category_label": "Category",
+        "avg_price_label": "Avg. Price",
+        "median_label": "Median",
+        "range_label": "Range",
+        "low_label": "Low",
+        "high_label": "High",
+        "variance_label": "Variance",
+        "outliers_label": "Outliers",
+        "total_suppliers_label": "Total Suppliers",
+        "top3_share_label": "Top 3 Share",
+        "hhi_label": "HHI Index",
+        "level_label": "Level",
+        "concentration_low": "Low",
+        "concentration_moderate": "Moderate",
+        "concentration_high": "High",
+        "concentration_very_high": "Very High",
+        "entities_label": "Entities",
+        "compliant_label": "Compliant",
+        "rate_label": "Rate",
+        "expiring_licenses_label": "Expiring Licenses",
+        "violations_label": "Violations",
+        "kpi": {
+          "total_marketplace_volume": "Total Marketplace Volume",
+          "avg_compliance_rate": "Avg. Compliance Rate",
+          "high_concentration_sectors": "High Concentration Sectors",
+          "price_outliers": "Price Outliers"
+        }
+      },
+      "compliance": {
+        "meta": {
+          "title": "Compliance Monitoring"
+        },
+        "title": "Compliance Monitoring",
+        "back_to_dashboard": "Back to Dashboard",
+        "filter_by_sector": "Filter by sector:",
+        "all_sectors": "All Sectors",
+        "compliance_rate": "Compliance Rate",
+        "compliant": "Compliant",
+        "expiring": "Expiring",
+        "violations": "Violations",
+        "non_compliant_title": "Non-Compliant Entities",
+        "non_compliant_description": "List of entities with outstanding compliance issues",
+        "entity_name_label": "Entity Name",
+        "sector_label": "Sector",
+        "issue_type_label": "Issue Type",
+        "description_label": "Description",
+        "days_overdue_label": "Days Overdue"
+      },
+      "suppliers": {
+        "meta": {
+          "title": "Supplier Concentration"
+        },
+        "title": "Supplier Concentration Analysis",
+        "back_to_dashboard": "Back to Dashboard",
+        "concentration_by_sector_title": "Concentration by Sector",
+        "concentration_description": "Extended market concentration analysis with risk assessment",
+        "sector_label": "Sector",
+        "total_suppliers_label": "Total Suppliers",
+        "top3_share_label": "Top 3 Share",
+        "hhi_label": "HHI Index",
+        "level_label": "Level",
+        "risk_assessment_label": "Risk Assessment",
+        "concentration_low": "Low",
+        "concentration_moderate": "Moderate",
+        "concentration_high": "High",
+        "concentration_very_high": "Very High",
+        "risk_low": "Minimal Risk",
+        "risk_moderate": "Moderate Risk",
+        "risk_elevated": "Elevated Risk",
+        "risk_critical": "Critical Risk",
+        "top_suppliers_title": "Top Suppliers by Market Share",
+        "top_suppliers_description": "Suppliers ranked by their marketplace market share",
+        "supplier_name_label": "Supplier Name",
+        "market_share_label": "Market Share",
+        "revenue_label": "Revenue",
+        "new_registrations_title": "New Supplier Registrations"
+      }
+    },
+    "admin": {
+      "tenants": {
+        "meta": {
+          "title": "Tenant Management"
+        },
+        "title": "Tenant Management",
+        "create_tenant": "Create Tenant",
+        "kpi": {
+          "total_tenants": "Total Tenants",
+          "active_tenants": "Active",
+          "total_users": "Total Users",
+          "platform_gmv": "Platform GMV"
+        },
+        "table": {
+          "name": "Name",
+          "domain": "Domain",
+          "status": "Status",
+          "users": "Users",
+          "products": "Products",
+          "monthly_gmv": "Monthly GMV",
+          "created": "Created",
+          "actions": "Actions",
+          "empty": "No tenants configured."
+        },
+        "status": {
+          "active": "Active",
+          "suspended": "Suspended",
+          "pending": "Pending",
+          "archived": "Archived"
+        },
+        "domains": {
+          "manufacturing": "Manufacturing",
+          "healthcare": "Healthcare",
+          "construction": "Construction",
+          "food_beverage": "Food & Beverage",
+          "technology": "Technology",
+          "retail": "Retail",
+          "energy": "Energy",
+          "agriculture": "Agriculture",
+          "custom": "Custom"
+        }
+      },
+      "tenant_detail": {
+        "meta": {
+          "title": "Tenant: {name}"
+        },
+        "back": "Back to Tenants",
+        "tabs": {
+          "overview": "Overview",
+          "branding": "Branding",
+          "taxonomy": "Taxonomy",
+          "rules": "Eligibility Rules",
+          "notifications": "Notifications",
+          "analytics": "Analytics Config"
+        },
+        "overview": {
+          "title": "Tenant Overview",
+          "name": "Name",
+          "slug": "Slug",
+          "domain": "Domain",
+          "status": "Status",
+          "users": "Users",
+          "products": "Products",
+          "gmv": "Monthly GMV",
+          "created": "Created",
+          "updated": "Last Updated"
+        },
+        "branding": {
+          "title": "Branding Configuration",
+          "logo_url": "Logo URL",
+          "logo_url_placeholder": "https://example.com/logo.svg",
+          "favicon_url": "Favicon URL",
+          "favicon_url_placeholder": "https://example.com/favicon.ico",
+          "primary_color": "Primary Color",
+          "secondary_color": "Secondary Color",
+          "accent_color": "Accent Color",
+          "font_family": "Font Family",
+          "custom_css": "Custom CSS",
+          "custom_css_placeholder": "Enter custom CSS overrides...",
+          "preview": "Preview",
+          "save": "Save Branding"
+        },
+        "taxonomy": {
+          "title": "Taxonomy Configuration",
+          "name": "Taxonomy Name",
+          "categories": "Categories",
+          "add_category": "Add Category",
+          "category_placeholder": "Enter category name",
+          "custom_attributes": "Custom Attributes",
+          "add_attribute": "Add Attribute",
+          "attr_key": "Key",
+          "attr_label": "Label",
+          "attr_type": "Type",
+          "attr_required": "Required",
+          "save": "Save Taxonomy"
+        },
+        "rules": {
+          "title": "Eligibility Rules",
+          "add_rule": "Add Rule",
+          "name": "Rule Name",
+          "type": "Rule Type",
+          "type_license_required": "License Required",
+          "type_certification_required": "Certification Required",
+          "type_region_restricted": "Region Restricted",
+          "type_minimum_rating": "Minimum Rating",
+          "type_custom": "Custom",
+          "condition": "Condition",
+          "action": "Action",
+          "action_allow": "Allow",
+          "action_block": "Block",
+          "action_flag_review": "Flag for Review",
+          "applies_to": "Applies To",
+          "applies_buyers": "Buyers",
+          "applies_sellers": "Sellers",
+          "applies_both": "Both",
+          "enabled": "Enabled",
+          "actions": "Actions",
+          "empty": "No eligibility rules configured."
+        },
+        "notifications": {
+          "title": "Notification Templates",
+          "add_template": "Add Template",
+          "name": "Template Name",
+          "channel": "Channel",
+          "channel_email": "Email",
+          "channel_sms": "SMS",
+          "channel_push": "Push",
+          "channel_in_app": "In-App",
+          "subject": "Subject",
+          "variables": "Variables",
+          "enabled": "Enabled",
+          "actions": "Actions",
+          "empty": "No notification templates configured."
+        },
+        "analytics_config": {
+          "title": "Analytics Configuration",
+          "shared_analytics": "Shared Analytics",
+          "shared_analytics_description": "Allow anonymized data to be shared across the platform for benchmarking",
+          "custom_dashboard": "Custom Dashboard",
+          "custom_dashboard_description": "Enable custom dashboard configuration for this tenant",
+          "export_enabled": "Data Export",
+          "export_description": "Allow tenants to export analytics data",
+          "retention_days": "Data Retention (days)",
+          "save": "Save Configuration"
+        }
+      },
+      "playbooks": {
+        "meta": {
+          "title": "Domain Playbooks"
+        },
+        "title": "Domain Playbooks",
+        "description": "Template-based tenant onboarding. Select a domain playbook to create a pre-configured tenant with industry-specific taxonomy, rules, and notification templates.",
+        "card": {
+          "categories": "{count} categories",
+          "rules": "{count} rules",
+          "templates": "{count} templates",
+          "recommended_modules": "Recommended Modules",
+          "sector_fields": "Sector-Specific Fields",
+          "create_tenant": "Create Tenant from Playbook"
+        }
+      }
     }
   },
   "identity_error": {

@@ -15,8 +15,8 @@
 
       <!-- Sidebar content -->
       <transition
-        enter-from-class="-translate-x-full"
-        leave-to-class="-translate-x-full"
+        :enter-from-class="isRtl ? 'translate-x-full' : '-translate-x-full'"
+        :leave-to-class="isRtl ? 'translate-x-full' : '-translate-x-full'"
         enter-active-class="will-change-transform"
         leave-active-class="will-change-transform"
       >
@@ -43,6 +43,7 @@
 <script setup lang="ts">
 import { syncRefs, useScrollLock } from "@vueuse/core";
 import { toRefs } from "vue";
+import { useRtl } from "@/core/composables";
 
 interface IEmits {
   (event: "hide"): void;
@@ -61,6 +62,7 @@ const emit = defineEmits<IEmits>();
 const props = defineProps<IProps>();
 
 const { isVisible } = toRefs(props);
+const { isRtl } = useRtl();
 
 syncRefs(isVisible, useScrollLock(document.body));
 
@@ -76,7 +78,7 @@ function onHide() {
   }
 
   &__dialog {
-    @apply fixed inset-y-2 left-2 z-50 w-[calc(100%-1rem)] max-w-[21.25rem];
+    @apply fixed inset-y-2 start-2 z-50 w-[calc(100%-1rem)] max-w-[21.25rem];
   }
 
   &__footer {

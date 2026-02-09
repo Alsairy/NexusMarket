@@ -312,7 +312,7 @@ const _iconColor = computed(() => getColorValue(props.iconColor));
     --vc-icon-size: var(--close-button-icon-size);
     --vc-icon-color: var(--close-button-icon-color);
 
-    @apply self-stretch absolute inset-y-0 right-0 flex items-center justify-center size-[--min-h] rounded-[inherit];
+    @apply self-stretch absolute inset-y-0 end-0 flex items-center justify-center size-[--min-h] rounded-[inherit];
 
     .vc-icon {
       @apply transition-transform duration-200 ease-in-out;

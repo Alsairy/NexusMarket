@@ -233,7 +233,7 @@ watch(activeNavItem, (newActiveNavItem) => {
   }
 
   &__title {
-    @apply mb-5;
+    @apply mb-5 tracking-tight;
   }
 
   &__top {
@@ -257,7 +257,7 @@ watch(activeNavItem, (newActiveNavItem) => {
   }
 
   &__tile {
-    @apply p-3 aspect-[204/100] bg-additional-50 shadow-md rounded-sm flex items-center justify-center;
+    @apply p-3 aspect-[204/100] bg-additional-50 shadow-md rounded-md flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5;
   }
 
   &__img {
@@ -348,7 +348,7 @@ watch(activeNavItem, (newActiveNavItem) => {
     @apply inline-block max-w-full text-additional-950 truncate;
 
     &:hover {
-      @apply text-[--link-hover-color];
+      @apply text-primary;
     }
   }
 

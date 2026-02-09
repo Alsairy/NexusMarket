@@ -700,7 +700,7 @@ onMounted(() => {
 <style lang="scss">
 .category {
   &__breadcrumbs {
-    @apply mb-2.5;
+    @apply mb-3;
 
     @media (min-width: theme("screens.md")) {
       @apply mb-4;
@@ -711,27 +711,28 @@ onMounted(() => {
     @apply mb-4;
 
     @media (min-width: theme("screens.md")) {
-      @apply mb-5;
+      @apply mb-6;
     }
   }
 
   &__title {
     --vc-typography-text-transform: none;
+    @apply tracking-tight;
   }
 
   &__title-skeleton {
-    @apply inline-block w-48 bg-neutral-200 md:w-64;
+    @apply inline-block w-48 animate-pulse rounded bg-neutral-200 md:w-64;
   }
 
   &__products-count {
-    @apply -top-1 ml-2 whitespace-nowrap text-sm font-normal normal-case text-neutral lg:top-[-0.5em] lg:text-base;
+    @apply -top-1 ml-2 whitespace-nowrap text-sm font-normal normal-case text-neutral-500 lg:top-[-0.5em] lg:text-base;
   }
 
   &__filters {
-    @apply flex items-center gap-3 my-3 empty:h-2;
+    @apply flex items-center gap-3 my-4 empty:h-2;
 
     @media (min-width: theme("screens.md")) {
-      @apply mb-3.5 mt-3 flex-wrap justify-end;
+      @apply mb-4 mt-4 flex-wrap justify-end;
     }
 
     @media (min-width: theme("screens.xl")) {
@@ -739,7 +740,7 @@ onMounted(() => {
     }
 
     &--sticky {
-      @apply z-40 sticky top-[2.1rem] -mx-6 bg-additional-50 px-5 py-3 shadow-lg;
+      @apply z-40 sticky top-[2.1rem] -mx-6 bg-additional-50/95 backdrop-blur-sm px-5 py-3 shadow-lg;
     }
   }
 
@@ -762,7 +763,7 @@ onMounted(() => {
   }
 
   &__sort-label {
-    @apply me-2 shrink-0;
+    @apply me-2 shrink-0 text-neutral-500;
 
     @media (width < theme("screens.md")) {
       @apply hidden;
@@ -788,7 +789,7 @@ onMounted(() => {
   }
 
   &__products-bottom {
-    @apply my-8 text-center;
+    @apply my-10 text-center;
   }
 }
 </style>
