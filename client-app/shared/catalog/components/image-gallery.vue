@@ -241,15 +241,15 @@ onUnmounted(() => {
   }
 
   &__images {
-    @apply w-full h-full bg-additional-50 rounded-[--radius] duration-300 ease-linear;
+    @apply w-full h-full bg-additional-50 rounded-[--radius] duration-300 ease-linear overflow-hidden;
 
-    &:hover {
-      @apply opacity-50;
+    &:hover .image-gallery__img {
+      @apply scale-105;
     }
   }
 
   &__img {
-    @apply relative w-full h-full rounded-[--radius] object-center object-contain cursor-zoom-in;
+    @apply relative w-full h-full rounded-[--radius] object-center object-contain cursor-zoom-in transition-transform duration-500 ease-out;
   }
 
   &__badges {
@@ -273,10 +273,14 @@ onUnmounted(() => {
   }
 
   &__thumb-img {
-    @apply border rounded-[--radius] w-full aspect-square object-center object-contain;
+    @apply border rounded-[--radius] w-full aspect-square object-center object-contain transition-all duration-200;
+
+    &:hover {
+      @apply border-primary-300;
+    }
 
     &--active {
-      @apply border-primary outline outline-1 outline-primary;
+      @apply border-primary outline outline-2 outline-primary shadow-glow;
     }
   }
 }

@@ -6,13 +6,13 @@
     :hide-mobile-side="isValidData && !isSucceeded"
   >
     <div class="w-full sm:pe-12 md:pe-24">
-      <VcTypography tag="h1" class="order-first mb-3">
+      <VcTypography tag="h1" class="order-first mb-5 tracking-tight">
         {{ $t(`pages.${localizationPageTerm}.header`) }}
       </VcTypography>
 
       <template v-if="isValidData">
         <template v-if="!isSucceeded">
-          <div class="mb-4 text-base font-bold">
+          <div class="mb-5 text-base font-semibold text-neutral-700">
             {{ $t(`pages.${localizationPageTerm}.enter_new_password_message`) }}
           </div>
 
@@ -26,7 +26,7 @@
         </template>
 
         <template v-else>
-          <div class="mb-3 text-base sm:mb-6">
+          <div class="mb-5 text-base text-neutral-600 sm:mb-6">
             {{ $t(`pages.${localizationPageTerm}.success_message`) }}
           </div>
 
@@ -37,7 +37,7 @@
       </template>
 
       <template v-else>
-        <div class="mb-3 text-base font-bold text-danger sm:mb-6">
+        <div class="mb-5 text-base font-semibold text-danger sm:mb-6">
           {{ $t("common.messages.invalid_user_id_or_token") }}
         </div>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <VcTypography tag="h1">
+    <VcTypography tag="h1" class="tracking-tight">
       {{ $t("pages.account.profile.title") }}
     </VcTypography>
 
@@ -15,7 +15,7 @@
           :message="errors.firstName"
           :error="!!errors.firstName"
           name="firstName"
-          class="mb-5"
+          class="mb-6"
           required
         />
 
@@ -28,7 +28,7 @@
           :message="errors.lastName"
           :error="!!errors.lastName"
           name="lastName"
-          class="mb-5"
+          class="mb-6"
           required
         />
 
@@ -38,7 +38,7 @@
           :placeholder="$t('common.placeholders.first_name')"
           name="email"
           autocomplete="off"
-          class="mb-5"
+          class="mb-6"
           disabled
         />
 
@@ -65,7 +65,7 @@
         </div>
 
         <!-- Form actions -->
-        <div class="mt-5 w-1/2 self-center lg:self-auto">
+        <div class="mt-8 w-1/2 self-center lg:self-auto">
           <VcButton
             :disabled="!meta.dirty || !meta.valid || meta.pending"
             :loading="isSubmitting"

@@ -2,7 +2,7 @@
   <VcContainer>
     <VcBreadcrumbs class="mb-3 max-lg:hidden" :items="breadcrumbs" />
 
-    <VcTypography tag="h1" class="mb-5">
+    <VcTypography tag="h1" class="mb-6 tracking-tight">
       {{ $t("pages.bulk_order.title") }}
     </VcTypography>
 

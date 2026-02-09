@@ -6,7 +6,7 @@
     icon="outline-compare"
     image="pills.jpg"
   >
-    <div class="mb-6 text-lg font-bold">
+    <div class="mb-6 text-lg font-semibold text-neutral-700">
       {{ $t("pages.compare.empty_list.message") }}
     </div>
 
@@ -25,11 +25,16 @@
 
     <div class="flex flex-col lg:mb-5 lg:flex-row lg:space-x-12">
       <div class="space-y-1.5">
-        <VcTypography tag="h1">
+        <VcTypography tag="h1" class="tracking-tight">
           {{ $t("pages.compare.header_block.title") }}
         </VcTypography>
 
-        <i18n-t keypath="pages.compare.header_block.counter_message" scope="global" tag="span" class="mb-3 block">
+        <i18n-t
+          keypath="pages.compare.header_block.counter_message"
+          scope="global"
+          tag="span"
+          class="mb-3 block text-neutral-600"
+        >
           <template #productsNumber>
             <strong>{{ productsCount }}</strong>
           </template>
@@ -80,7 +85,7 @@
               :key="index"
               class="flex gap-4.5 px-5 lg:min-h-17 lg:items-center lg:border-0 lg:py-2 lg:odd:bg-neutral-50"
             >
-              <div class="hidden w-[8.5rem] shrink-0 pl-1 text-sm font-black lg:block">{{ prop.label }}</div>
+              <div class="hidden w-[8.5rem] shrink-0 ps-1 text-sm font-black lg:block">{{ prop.label }}</div>
 
               <div
                 v-for="(value, i) in prop.values"

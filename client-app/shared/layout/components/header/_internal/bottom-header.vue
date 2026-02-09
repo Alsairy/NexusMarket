@@ -2,7 +2,7 @@
   <div class="relative bg-[--header-bottom-bg-color] text-[--header-bottom-text-color]">
     <nav
       ref="bottomHeader"
-      class="relative z-[2] flex min-h-[5.5rem] items-center gap-x-5 bg-inherit px-5 py-3 xl:px-12"
+      class="relative z-[2] flex min-h-[5.5rem] items-center gap-x-5 bg-inherit px-5 py-3 transition-shadow duration-300 xl:px-12"
       :aria-label="$t('shared.layout.header.bottom_header.main_menu')"
     >
       <router-link :to="$context.settings.default_return_url ?? '/'">
@@ -23,7 +23,7 @@
         ref="showCatalogMenuButton"
         :href="catalogLink"
         type="button"
-        class="flex select-none items-center rounded border-2 border-primary px-[0.8rem] py-[0.55rem] text-sm text-[--header-bottom-link-color] hover:text-[--header-bottom-link-hover-color]"
+        class="flex select-none items-center rounded-lg border-2 border-primary bg-primary-50/0 px-[0.8rem] py-[0.55rem] text-sm text-[--header-bottom-link-color] transition-all duration-200 hover:bg-primary-50 hover:text-[--header-bottom-link-hover-color] hover:shadow-sm"
         :aria-label="$t('shared.layout.header.bottom_header.catalog_menu_button')"
         aria-haspopup="menu"
         @click="toggleCatalogDropdown"

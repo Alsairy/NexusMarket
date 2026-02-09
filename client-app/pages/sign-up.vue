@@ -1,12 +1,12 @@
 <template>
   <VcEmptyPage icon="outline-security-pc" image="reg.jpg" hide-mobile-side>
     <div class="order-first w-full text-start sm:pe-12 lg:pe-24 lg:ps-12">
-      <VcTypography tag="h1" class="mb-6">
+      <VcTypography tag="h1" class="mb-8 tracking-tight">
         {{ $t("pages.sign_up.header") }}
       </VcTypography>
 
       <form class="w-full" @submit="onSubmit">
-        <div class="my-5 flex flex-col space-y-5 md:flex-row md:space-x-7 md:space-y-0">
+        <div class="my-6 flex flex-col space-y-5 md:flex-row md:space-x-8 md:space-y-0">
           <VcRadioButton
             id="shipping"
             v-model="registrationKind"
@@ -88,7 +88,7 @@
           test-id-input="sign-up-organization-name-input"
         />
 
-        <div class="block justify-between lg:flex lg:space-x-6">
+        <div class="block justify-between lg:flex lg:gap-6">
           <VcInput
             v-model="password"
             :label="$t('common.labels.password')"
@@ -120,7 +120,7 @@
           />
         </div>
 
-        <div class="mt-6 lg:mt-4">
+        <div class="mt-8 lg:mt-6">
           <PasswordTips v-if="passwordRequirements" :requirements="passwordRequirements" />
 
           <VcAlert
@@ -130,7 +130,7 @@
             color="danger"
             size="sm"
             variant="solid-light"
-            class="mt-3 text-xs"
+            class="mt-4 text-xs"
             icon
           >
             {{ error }}
@@ -139,7 +139,7 @@
           <VcButton
             :loading="loading"
             type="submit"
-            class="mt-6 w-full lg:mt-3 lg:w-48"
+            class="mt-8 w-full lg:mt-5 lg:w-48"
             data-test-id="sign-up-submit-button"
           >
             {{ $t("pages.sign_up.register_button") }}

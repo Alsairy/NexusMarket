@@ -1,6 +1,6 @@
 <template>
   <VcContainer>
-    <VcTypography tag="h1" class="mb-5 print:mb-0">
+    <VcTypography tag="h1" class="mb-6 tracking-tight print:mb-0">
       {{ pageTitle }}
     </VcTypography>
 
@@ -9,7 +9,7 @@
       :current-step-index="currentStepIndex"
       :start-step-index="0"
       :disabled="loading || changing"
-      class="mb-5"
+      class="mb-6"
     />
 
     <VcLoaderOverlay :visible="loading || !currentStepId" fixed-spinner />

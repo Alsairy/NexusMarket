@@ -1,6 +1,6 @@
 import { BREAKPOINTS } from "./client-app/core/constants/tailwind.js";
-import plugin from "tailwindcss/plugin";
 import type { Config } from "tailwindcss";
+const plugin = require("tailwindcss/plugin");
 
 const primaryColors = {
   DEFAULT: "rgb(from var(--color-primary-500) r g b / <alpha-value>)",
@@ -288,6 +288,20 @@ module.exports = {
         xl: "0 8px 25px 0 rgb(from var(--color-additional-950) r g b / 0.1), 0 8px 10px -6px rgb(from var(--color-additional-950) r g b / 0.1)",
         "2xl": "0 10px 50px 0 rgb(from var(--color-additional-950) r g b / 0.25)",
         inner: "inset 0 2px 4px 0 rgb(from var(--color-additional-950) r g b / 0.05)",
+        glow: "0 0 20px rgb(from var(--color-primary-500) r g b / 0.3)",
+        "glow-lg": "0 0 40px rgb(from var(--color-primary-500) r g b / 0.2)",
+        card: "0 1px 3px rgb(from var(--color-additional-950) r g b / 0.08), 0 1px 2px rgb(from var(--color-additional-950) r g b / 0.06)",
+        "card-hover": "0 12px 40px rgb(from var(--color-additional-950) r g b / 0.12)",
+      },
+
+      transitionDuration: {
+        "400": "400ms",
+        "600": "600ms",
+      },
+
+      animation: {
+        "fade-in-up": "fadeInUp 0.6s ease-out forwards",
+        "pulse-glow": "pulseGlow 2s ease-in-out infinite",
       },
 
       maxHeight: {
@@ -300,7 +314,7 @@ module.exports = {
   plugins: [
     require("@tailwindcss/container-queries"),
     require("tw-elements/dist/plugin.cjs"),
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addUtilities }: { addUtilities: (utilities: Record<string, Record<string, string>>) => void }) {
       addUtilities({
         ".flip-x": {
           transform: "scaleX(-1)",

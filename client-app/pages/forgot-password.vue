@@ -1,11 +1,11 @@
 <template>
   <VcEmptyPage icon="outline-security" image="sign-in.jpg" :status-color="isSucceeded ? 'success' : 'secondary'">
-    <VcTypography tag="h1" class="order-first mb-3">
+    <VcTypography tag="h1" class="order-first mb-5 tracking-tight">
       {{ $t("pages.forgot_password.header") }}
     </VcTypography>
 
     <div v-if="!isSucceeded">
-      <div class="mb-4 text-base">
+      <div class="mb-5 text-base text-neutral-600">
         {{ $t("pages.forgot_password.email_will_be_sended_message") }}
       </div>
 
@@ -13,7 +13,7 @@
     </div>
 
     <div v-else>
-      <div class="mb-5 text-base">{{ $t("pages.forgot_password.reset_link_was_sent_message") }}</div>
+      <div class="mb-6 text-base text-neutral-600">{{ $t("pages.forgot_password.reset_link_was_sent_message") }}</div>
 
       <VcButton to="/" min-width="12rem">
         {{ $t("pages.forgot_password.home_button") }}

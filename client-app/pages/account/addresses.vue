@@ -2,7 +2,7 @@
   <div>
     <!-- Title block -->
     <div class="flex items-center justify-between">
-      <VcTypography tag="h1">
+      <VcTypography tag="h1" class="tracking-tight">
         {{ $t("common.titles.addresses") }}
       </VcTypography>
 
@@ -40,13 +40,13 @@
           @header-click="applySorting"
         >
           <template #mobile-item="itemData">
-            <div class="relative grid grid-cols-2 gap-y-4 border-b border-neutral-200 p-6">
+            <div class="relative grid grid-cols-2 gap-y-5 border-b border-neutral-200 p-6">
               <div class="flex flex-col">
                 <span class="text-sm text-neutral-400">
                   {{ $t("common.labels.recipient_name") }}
                 </span>
 
-                <span class="overflow-hidden text-ellipsis pr-4 font-black">
+                <span class="overflow-hidden text-ellipsis pe-4 font-black">
                   {{ itemData.item.firstName }} {{ itemData.item.lastName }}
                 </span>
               </div>
@@ -68,7 +68,7 @@
                   {{ $t("common.labels.phone") }}
                 </span>
 
-                <span class="overflow-hidden text-ellipsis pr-4">
+                <span class="overflow-hidden text-ellipsis pe-4">
                   {{ itemData.item.phone }}
                 </span>
               </div>
@@ -84,7 +84,7 @@
               </div>
 
               <AddressDropdownMenu
-                class="absolute right-4 top-3"
+                class="absolute end-4 top-3"
                 :address="itemData.item"
                 placement="left-start"
                 @edit="openAddOrUpdateAddressModal(itemData.item)"
@@ -94,7 +94,11 @@
           </template>
 
           <template #desktop-body>
-            <tr v-for="address in paginatedAddresses" :key="address.id" class="even:bg-neutral-50">
+            <tr
+              v-for="address in paginatedAddresses"
+              :key="address.id"
+              class="transition-colors duration-150 even:bg-neutral-50 hover:bg-primary-50"
+            >
               <td class="overflow-hidden text-ellipsis p-5">{{ address.firstName }} {{ address.lastName }}</td>
 
               <td class="overflow-hidden text-ellipsis p-5">

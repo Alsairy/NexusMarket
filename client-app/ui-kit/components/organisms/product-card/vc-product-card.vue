@@ -105,10 +105,10 @@ onMounted(() => {
   }
 
   &--border {
-    @apply rounded-[--radius] border border-neutral-200 shadow-sm transition-all duration-200;
+    @apply rounded-[--radius] border border-neutral-200 shadow-card transition-all duration-300;
 
     &:hover {
-      @apply shadow-md border-neutral-300;
+      @apply shadow-card-hover border-neutral-300 -translate-y-1;
     }
   }
 

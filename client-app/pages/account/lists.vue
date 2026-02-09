@@ -2,7 +2,7 @@
   <div>
     <!-- Title block -->
     <div class="flex items-center justify-between">
-      <VcTypography tag="h1">
+      <VcTypography tag="h1" class="tracking-tight">
         {{ $t("shared.account.navigation.links.lists") }}
       </VcTypography>
 
@@ -21,12 +21,12 @@
     </div>
 
     <!-- Skeletons -->
-    <div v-if="loading" class="flex flex-col divide-y lg:space-y-3 lg:divide-none">
+    <div v-if="loading" class="flex flex-col divide-y lg:space-y-4 lg:divide-none">
       <WishlistCardSkeleton v-for="item in 5" :key="item" />
     </div>
 
     <!-- Lists -->
-    <div v-else-if="lists.length" class="space-y-3 md:space-y-2.5">
+    <div v-else-if="lists.length" class="space-y-4 md:space-y-3">
       <WishlistCard
         v-for="list in lists"
         :key="list.id"

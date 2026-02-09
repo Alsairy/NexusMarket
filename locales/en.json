@@ -1004,29 +1004,51 @@
     },
     "home": {
       "meta": {
-        "title": "Home",
-        "keywords": "test, home, page, keywords",
-        "description": "Test home page description"
+        "title": "Nexus Market — B2B Industrial Marketplace",
+        "keywords": "B2B marketplace, industrial supplies, manufacturing, procurement, wholesale",
+        "description": "Nexus Market is the leading B2B marketplace for industrial and manufacturing supplies. Browse verified suppliers, competitive pricing, and streamlined procurement."
       },
-      "sign_in_form_title": "Sign in",
-      "main_banner_block": {
-        "message": "We can help you{br}make informed{br}and wise decisions",
-        "key_feature_1": "Result oriented",
-        "key_feature_2": "Trustworthy",
-        "key_feature_3": "Reliable"
+      "sign_in_form_title": "Sign in to your account",
+      "hero": {
+        "badge": "Trusted B2B Marketplace",
+        "title_line1": "Source ",
+        "title_highlight": "Industrial Supplies ",
+        "title_line2": "with Confidence",
+        "subtitle": "Connect with verified suppliers, access competitive pricing, and streamline your procurement — all in one powerful B2B marketplace.",
+        "cta_primary": "Browse Catalog",
+        "cta_secondary": "Create Account",
+        "trust_1": "Verified Suppliers",
+        "trust_2": "Secure Transactions",
+        "trust_3": "SAR Pricing",
+        "welcome_back": "Welcome back",
+        "quick_orders": "Quick Orders",
+        "browse_catalog": "Browse Catalog",
+        "my_cart": "My Cart",
+        "track_orders": "Track Orders"
       },
-      "feature_descriptions_block": {
-        "title": "Commercial management has never been that easy",
-        "feature_1": "Corporate account management",
-        "feature_2": "Quote management and price negotiation",
-        "feature_3": "Multiple stores, channels, and locations",
-        "feature_4": "B2B customization and price management"
+      "stats": {
+        "products": "Products Listed",
+        "categories": "Categories",
+        "verified": "Verified Suppliers",
+        "support": "Platform Support"
       },
-      "subscription_block": {
-        "subscribe_now": "Subscribe now!",
-        "info_message": "Stay&nbsp;connected&nbsp;to&nbsp;B2B&nbsp;store&nbsp;news!",
-        "email_placeholder": "Your email",
-        "subscribe_button": "Subscribe"
+      "features": {
+        "title": "Everything You Need to Procure Smarter",
+        "subtitle": "From sourcing to delivery, Nexus Market streamlines every step of your B2B procurement journey.",
+        "feature_1_title": "Corporate Account Management",
+        "feature_1_desc": "Manage multiple buyers, set approval workflows, and control spending limits across your organization.",
+        "feature_2_title": "Secure Payment & Invoicing",
+        "feature_2_desc": "Flexible payment terms, automated invoicing, and escrow protection for every transaction.",
+        "feature_3_title": "Verified Product Catalog",
+        "feature_3_desc": "Browse 188+ products across 53 categories with detailed specs, certifications, and compliance data.",
+        "feature_4_title": "Order Tracking & Analytics",
+        "feature_4_desc": "Real-time order tracking, spend analytics, and procurement insights to optimize your supply chain."
+      },
+      "cta": {
+        "title": "Ready to Transform Your Procurement?",
+        "subtitle": "Join hundreds of businesses already using Nexus Market to source industrial supplies smarter and faster.",
+        "button_primary": "Get Started Free",
+        "button_secondary": "Explore Products"
       }
     },
     "forgot_password": {
@@ -2032,57 +2054,65 @@
     },
     "demo_landing": {
       "meta": {
-        "title": "Demo landing"
+        "title": "Nexus Market — Industrial Marketplace"
       },
-      "header": "Printers market overview",
-      "primary_block": {
-        "primary_text": "Commercial management has never been that easy",
-        "secondary_text": "Anything you dream about may come true right at the moment you decide to win",
-        "first_button": "Learn more",
-        "second_button": "Get in touch",
-        "image_alt": "A laptop on a table"
+      "header": "Industrial Marketplace",
+      "hero": {
+        "badge": "New: AI-Powered Procurement",
+        "title_line1": "The Smarter Way to ",
+        "title_highlight": "Source & Procure",
+        "subtitle": "Nexus Market connects buyers and suppliers in a regulated B2B ecosystem with built-in compliance, transparent pricing, and intelligent procurement tools.",
+        "cta_primary": "Start Sourcing",
+        "cta_secondary": "Watch Demo"
       },
-      "secondary_block": {
-        "primary_text": "Readability is a primary concern of a designer",
-        "secondary_text": "Readability is a critical focus for designers as it directly impacts how effectively a message is communicated through design.  It involves choices such as fonts, spacing, and layout to ensure that content is easily understood. An emphasis on readability enhances user engagement and the overall success of a design."
+      "stats": {
+        "stat_1_value": "188+",
+        "stat_1_label": "Products",
+        "stat_2_value": "53",
+        "stat_2_label": "Categories",
+        "stat_3_value": "99.9%",
+        "stat_3_label": "Uptime",
+        "stat_4_value": "SAR",
+        "stat_4_label": "Local Currency"
       },
-      "features_block": {
-        "primary_text": "Explore the features",
-        "secondary_text": "With a crystal-clear camera, real-time HD video display, and intuitive flight controls, what will you create?",
+      "features": {
+        "title": "Built for Industrial Procurement",
+        "subtitle": "Purpose-built features that make B2B buying and selling effortless.",
         "feature_1": {
-          "title": "Epic aerial video",
-          "text": "With the Phantom 3 Professional, you can shoot 4K videos at up to 30 frames per second and capture 12MP photos."
+          "title": "Smart Catalog Search",
+          "text": "Find exactly what you need with AI-powered search across 53 categories of industrial and manufacturing supplies."
         },
         "feature_2": {
-          "title": "Live HD View",
-          "text": "Simply connect your phone or tablet and showcase 720p HD view of everything your camera sees."
+          "title": "Compliance Built-In",
+          "text": "Automated license verification, certification tracking, and regulatory compliance for every transaction."
         },
         "feature_3": {
-          "title": "Complete Control",
-          "text": " Keep your Phantom 3 fully under your command while accessing the most used features right on the included remote"
+          "title": "Secure Transactions",
+          "text": "Escrow-protected payments, flexible invoicing terms, and complete transaction transparency."
         }
       },
-      "booking_block": {
-        "message": "Book a free ecommerce consulting session",
-        "first_button": "Learn more",
-        "second_button": "Get in touch"
+      "categories": {
+        "title": "Browse by Category",
+        "subtitle": "Explore our curated selection of industrial and manufacturing categories."
       },
       "products_block": {
-        "title": "Printers",
-        "message": "Printers are necessary for creating physical documents, records, and communication materials across various industries and sectors",
-        "choose_button": "Choose"
+        "title": "Featured Products",
+        "message": "Discover top-rated industrial supplies from verified manufacturers",
+        "choose_button": "View Details"
       },
-      "after_products_block": {
-        "primary_text": "The Dynamic World of Business-to-Business Sales",
-        "secondary_text": "The modern business world is a world of sales. Companies, both large and small, actively engage with each other, offering their products and services. Successful businesses build long-term relationships, understanding customer needs and reacting to market changes. The success and survival of companies depend on effective sales. This dynamic world requires adaptation, innovation, and continuous learning to meet the demands of modern business partners."
+      "cta": {
+        "title": "Start Procuring Smarter Today",
+        "subtitle": "Create your free account and access the full catalog of verified industrial supplies.",
+        "button_primary": "Create Free Account",
+        "button_secondary": "Contact Sales"
       },
       "subscription_block": {
-        "primary_text": "Subscribe to our promotions",
-        "secondary_text": "Be among the first to hear about upcoming events",
-        "input_placeholder": "tanya.hill{'@'}example.com",
-        "agreement_checkbox_label": "By clicking \"Submit\", I hereby agree to the",
-        "terms_and_policy_link": "Terms and Policy",
-        "submit_button": "@:common.buttons.submit"
+        "primary_text": "Stay Updated",
+        "secondary_text": "Get the latest product listings, pricing updates, and procurement insights delivered to your inbox.",
+        "input_placeholder": "Enter your business email",
+        "agreement_checkbox_label": "By clicking \"Submit\", I agree to the ",
+        "terms_and_policy_link": "Terms and Privacy Policy",
+        "submit_button": "Subscribe"
       }
     },
     "compare": {

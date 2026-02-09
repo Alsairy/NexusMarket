@@ -6,11 +6,11 @@
     icon="outline-e-mail"
     :status-color="emailConfirmed ? 'success' : 'secondary'"
   >
-    <VcTypography tag="h1" class="order-first mb-6">
+    <VcTypography tag="h1" class="order-first mb-6 tracking-tight">
       {{ $t("pages.confirm_email.header") }}
     </VcTypography>
 
-    <div class="mb-10 max-w-md">
+    <div class="mb-10 max-w-md text-neutral-600">
       <span v-if="linkSentSuccessfully">
         {{ $t("pages.confirm_email.link_sent_successfully_text") }}
       </span>
@@ -24,13 +24,15 @@
       </span>
     </div>
 
-    <VcButton v-if="linkSentSuccessfully" :to="{ name: 'Home' }" min-width="12rem">
-      {{ $t("common.links.home") }}
-    </VcButton>
+    <div class="mt-8">
+      <VcButton v-if="linkSentSuccessfully" :to="{ name: 'Home' }" min-width="12rem">
+        {{ $t("common.links.home") }}
+      </VcButton>
 
-    <VcButton v-else-if="emailConfirmed" :to="{ name: 'SignIn' }" min-width="12rem">
-      {{ $t("pages.confirm_email.continue_button") }}
-    </VcButton>
+      <VcButton v-else-if="emailConfirmed" :to="{ name: 'SignIn' }" min-width="12rem">
+        {{ $t("pages.confirm_email.continue_button") }}
+      </VcButton>
+    </div>
   </VcEmptyPage>
 
   <!-- Error -->
@@ -40,11 +42,11 @@
     icon="outline-e-mail"
     status-color="danger"
   >
-    <VcTypography tag="h1" class="order-first mb-6">
+    <VcTypography tag="h1" class="order-first mb-6 tracking-tight">
       {{ $t("pages.confirm_email.header") }}
     </VcTypography>
 
-    <div class="mb-10 max-w-md">
+    <div class="mb-10 max-w-md text-neutral-600">
       <span v-if="!emailConfirmed">
         {{ $t("pages.confirm_email.email_confirmation_failed_text") }}
       </span>
@@ -54,9 +56,11 @@
       </span>
     </div>
 
-    <VcButton :loading="loading" min-width="12rem" @click="resendLink">
-      {{ $t("common.buttons.resend_link") }}
-    </VcButton>
+    <div class="mt-8">
+      <VcButton :loading="loading" min-width="12rem" @click="resendLink">
+        {{ $t("common.buttons.resend_link") }}
+      </VcButton>
+    </div>
   </VcEmptyPage>
 
   <!-- Loader -->

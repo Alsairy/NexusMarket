@@ -1,14 +1,14 @@
 <template>
   <VcEmptyPage image="email.jpg" icon="outline-e-mail">
-    <VcTypography tag="h1" class="order-first mb-3">
+    <VcTypography tag="h1" class="order-first mb-3 tracking-tight">
       {{ $t("pages.welcome.title") }}
     </VcTypography>
 
-    <VcTypography class="mb-8 max-w-md text-center sm:text-left">
+    <VcTypography class="mb-8 max-w-md text-center text-neutral-600 sm:text-left">
       {{ $t("pages.welcome.description") }}
     </VcTypography>
 
-    <div class="flex justify-center sm:justify-start">
+    <div class="mt-8 flex justify-center sm:justify-start">
       <VcButton to="/" min-width="12rem">
         {{ $t("common.buttons.home") }}
       </VcButton>

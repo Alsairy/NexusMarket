@@ -6,7 +6,7 @@
   <template v-else>
     <TopHeader class="relative z-[21] border-b border-neutral-300 print:hidden" />
 
-    <div ref="stickyHeader" class="sticky top-0 z-20 shadow-md print:hidden">
+    <div ref="stickyHeader" class="sticky top-0 z-20 shadow-lg print:hidden">
       <BottomHeader :is-menu-shown="desktopMenuMode === DESKTOP_MENU_MODES.fullscreen" />
 
       <MegaMenu v-if="isMegamenuShown" class="border-y border-neutral-200" />
