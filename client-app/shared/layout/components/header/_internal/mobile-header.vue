@@ -121,7 +121,7 @@
 <script setup lang="ts">
 import { syncRefs, useElementSize, useScrollLock } from "@vueuse/core";
 import { computed, ref } from "vue";
-import { useWhiteLabeling } from "@/core/composables";
+import { useRtl, useWhiteLabeling } from "@/core/composables";
 import { useModuleSettings } from "@/core/composables/useModuleSettings";
 import { MODULE_XAPI_KEYS } from "@/core/constants/modules";
 import { ROUTES } from "@/router/routes/constants";
@@ -146,7 +146,7 @@ const { height } = useElementSize(headerElement);
 const { cart } = useShortCart();
 const { logoUrl } = useWhiteLabeling();
 
-const isRtl = computed(() => document.documentElement.getAttribute("dir") === "rtl");
+const { isRtl } = useRtl();
 
 const placeholderStyle = computed<StyleValue | undefined>(() =>
   height.value ? { height: height.value + "px" } : undefined,

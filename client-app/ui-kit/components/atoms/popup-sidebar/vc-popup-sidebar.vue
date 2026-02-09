@@ -42,7 +42,8 @@
 
 <script setup lang="ts">
 import { syncRefs, useScrollLock } from "@vueuse/core";
-import { computed, toRefs } from "vue";
+import { toRefs } from "vue";
+import { useRtl } from "@/core/composables";
 
 interface IEmits {
   (event: "hide"): void;
@@ -61,7 +62,7 @@ const emit = defineEmits<IEmits>();
 const props = defineProps<IProps>();
 
 const { isVisible } = toRefs(props);
-const isRtl = computed(() => document.documentElement.getAttribute("dir") === "rtl");
+const { isRtl } = useRtl();
 
 syncRefs(isVisible, useScrollLock(document.body));
 

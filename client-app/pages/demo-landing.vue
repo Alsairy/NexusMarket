@@ -5,7 +5,13 @@
       <div
         class="animate-gradient absolute inset-0 opacity-15"
         style="
-          background: linear-gradient(135deg, #ff6037 0%, #000000 30%, #ff6037 60%, #000000 100%);
+          background: linear-gradient(
+            135deg,
+            var(--color-primary-500) 0%,
+            #000000 30%,
+            var(--color-primary-500) 60%,
+            #000000 100%
+          );
           background-size: 400% 400%;
         "
       ></div>
@@ -234,7 +240,7 @@
     <section class="relative overflow-hidden bg-neutral-950 py-16 lg:py-24">
       <div
         class="absolute inset-0 opacity-10"
-        style="background: radial-gradient(circle at 70% 50%, #ff6037, transparent 60%)"
+        style="background: radial-gradient(circle at 70% 50%, var(--color-primary-500), transparent 60%)"
       ></div>
 
       <div class="relative mx-auto max-w-screen-xl px-5 text-center md:px-12">
@@ -320,7 +326,7 @@ onMounted(async () => {
 
 <style scoped>
 .gradient-text {
-  background: linear-gradient(135deg, #ff6037, #ff8a6d);
+  background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-400));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

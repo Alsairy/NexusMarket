@@ -6,7 +6,7 @@ export const toastVariants = cva(
   {
     variants: {
       variant: {
-        default: "border-[#ff6037]/20 bg-additional-50 text-neutral-900",
+        default: "border-primary/20 bg-additional-50 text-neutral-900",
         success: "border-success-500/20 bg-additional-50 text-neutral-900",
         error: "border-danger-500/20 bg-additional-50 text-neutral-900",
         warning: "border-warning-500/20 bg-additional-50 text-neutral-900",
@@ -22,7 +22,7 @@ export const toastVariants = cva(
 export const toastIndicatorVariants = cva("absolute start-0 top-0 h-full w-1 rounded-s-lg", {
   variants: {
     variant: {
-      default: "bg-[#ff6037]",
+      default: "bg-primary",
       success: "bg-success-500",
       error: "bg-danger-500",
       warning: "bg-warning-500",

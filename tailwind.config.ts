@@ -180,7 +180,8 @@ module.exports = {
     ...colorSet,
     screens: BREAKPOINTS,
     fontFamily: {
-      lato: ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+      sans: ["Inter", "IBM Plex Sans Arabic", "sans-serif"],
+      lato: ["Inter", "IBM Plex Sans Arabic", "sans-serif"], // legacy alias — prefer font-sans
       inter: ["Inter", "sans-serif"],
       arabic: ["IBM Plex Sans Arabic", "sans-serif"],
     },
@@ -301,7 +302,11 @@ module.exports = {
 
       animation: {
         "fade-in-up": "fadeInUp 0.6s ease-out forwards",
+        "fade-in-left": "fadeInLeft 0.6s ease-out forwards",
+        "fade-in-right": "fadeInRight 0.6s ease-out forwards",
         "pulse-glow": "pulseGlow 2s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
+        "gradient-shift": "gradientShift 6s ease infinite",
       },
 
       maxHeight: {
