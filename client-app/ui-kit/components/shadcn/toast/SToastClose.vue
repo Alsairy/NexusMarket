@@ -1,20 +1,8 @@
-<script setup lang="ts">
-import { cn } from "@/ui-kit/utilities/cn";
-
-defineProps<{
-  class?: string;
-}>();
-
-const emit = defineEmits<{
-  click: [event: MouseEvent];
-}>();
-</script>
-
 <template>
   <button
     :class="
       cn(
-        'absolute right-2 top-2 rounded-md p-1 text-neutral-400 opacity-0 transition-opacity hover:text-neutral-900 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-neutral-400 group-hover:opacity-100',
+        'absolute end-2 top-2 rounded-md p-1 text-neutral-400 opacity-0 transition-opacity hover:text-neutral-900 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-neutral-400 group-hover:opacity-100',
         $props.class,
       )
     "
@@ -33,7 +21,20 @@ const emit = defineEmits<{
       stroke-linejoin="round"
     >
       <path d="M18 6 6 18" />
+
       <path d="m6 6 12 12" />
     </svg>
   </button>
 </template>
+
+<script setup lang="ts">
+import { cn } from "@/ui-kit/utilities/cn";
+
+const emit = defineEmits<{
+  click: [event: MouseEvent];
+}>();
+
+defineProps<{
+  class?: string;
+}>();
+</script>

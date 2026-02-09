@@ -1,26 +1,7 @@
-<script setup lang="ts">
-import { cn } from "@/ui-kit/utilities/cn";
-import {
-  DialogClose,
-  DialogContent,
-  type DialogContentEmits,
-  type DialogContentProps,
-  DialogOverlay,
-  DialogPortal,
-} from "radix-vue";
-
-const props = defineProps<
-  DialogContentProps & {
-    class?: string;
-  }
->();
-
-const emit = defineEmits<DialogContentEmits>();
-</script>
-
 <template>
   <DialogPortal>
     <DialogOverlay class="s-dialog-overlay fixed inset-0 z-50 bg-additional-950/80" />
+
     <DialogContent
       v-bind="{ ...props, class: undefined }"
       :class="
@@ -39,7 +20,7 @@ const emit = defineEmits<DialogContentEmits>();
       <slot />
 
       <DialogClose
-        class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-additional-50 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:pointer-events-none"
+        class="absolute end-4 top-4 rounded-sm opacity-70 ring-offset-additional-50 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 disabled:pointer-events-none"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -53,13 +34,29 @@ const emit = defineEmits<DialogContentEmits>();
           stroke-linejoin="round"
         >
           <path d="M18 6 6 18" />
+
           <path d="m6 6 12 12" />
         </svg>
+
         <span class="sr-only">Close</span>
       </DialogClose>
     </DialogContent>
   </DialogPortal>
 </template>
+
+<script setup lang="ts">
+import { DialogClose, DialogContent, DialogOverlay, DialogPortal } from "radix-vue";
+import { cn } from "@/ui-kit/utilities/cn";
+import type { DialogContentEmits, DialogContentProps } from "radix-vue";
+
+const emit = defineEmits<DialogContentEmits>();
+
+const props = defineProps<
+  DialogContentProps & {
+    class?: string;
+  }
+>();
+</script>
 
 <style scoped>
 .s-dialog-overlay {

@@ -162,7 +162,7 @@ function getButtonAriaLabel(index: number): string {
   }
 
   &--bg {
-    @apply absolute inset-y-0 left-0 w-1/2 bg-primary;
+    @apply absolute inset-y-0 start-0 w-1/2 bg-primary;
   }
 
   &__button {

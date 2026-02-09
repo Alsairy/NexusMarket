@@ -6,6 +6,7 @@
         <span class="text-xs font-medium text-neutral-500">
           {{ $t("pages.account.analytics.sales_overview.total_revenue") }}
         </span>
+
         <span class="text-xl font-black text-neutral-950">${{ totalRevenue.toLocaleString() }}</span>
       </div>
 
@@ -13,6 +14,7 @@
         <span class="text-xs font-medium text-neutral-500">
           {{ $t("pages.account.analytics.sales_overview.total_orders") }}
         </span>
+
         <span class="text-xl font-black text-neutral-950">{{ totalOrders.toLocaleString() }}</span>
       </div>
 
@@ -20,24 +22,21 @@
         <span class="text-xs font-medium text-neutral-500">
           {{ $t("pages.account.analytics.sales_overview.avg_daily_revenue") }}
         </span>
+
         <span class="text-xl font-black text-neutral-950">${{ avgDailyRevenue.toLocaleString() }}</span>
       </div>
     </div>
 
     <!-- Bar chart -->
     <div class="flex flex-col gap-1.5 overflow-x-auto">
-      <div
-        v-for="(point, index) in visibleData"
-        :key="index"
-        class="flex items-center gap-2"
-      >
+      <div v-for="(point, index) in visibleData" :key="index" class="flex items-center gap-2">
         <span class="w-20 shrink-0 text-right text-xs text-neutral-500">
           {{ formatDate(point.date) }}
         </span>
 
         <div class="relative h-5 flex-1 rounded bg-neutral-100">
           <div
-            class="absolute inset-y-0 left-0 rounded bg-primary-500 transition-all"
+            class="absolute inset-y-0 start-0 rounded bg-primary-500 transition-all"
             :style="{ width: barWidth(point.revenue) }"
           ></div>
         </div>

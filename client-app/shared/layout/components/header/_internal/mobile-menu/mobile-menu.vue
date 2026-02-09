@@ -3,7 +3,7 @@
     class="mobile-menu fixed z-50 flex size-full flex-col bg-[--mobile-menu-bg-color] text-[--mobile-menu-text-color]"
   >
     <div class="flex h-16 shrink-0 items-center gap-x-3 px-6">
-      <div class="grow pr-6">
+      <div class="grow pe-6">
         <span
           v-if="organization"
           class="line-clamp-2 text-xl italic leading-[22px] text-[--mobile-menu-text-color] [word-break:break-word]"
@@ -61,7 +61,7 @@
     <MainMenu v-else :menu-item="homeMenuItem" @close="$emit('close')" @select-item="selectMenuItem" />
 
     <div
-      class="mobile-menu__overlay fixed inset-y-0 right-0 hidden bg-additional-950/5 backdrop-blur-lg md:block"
+      class="mobile-menu__overlay fixed inset-y-0 end-0 hidden bg-additional-950/5 backdrop-blur-lg md:block"
       role="button"
       tabindex="0"
       @click="$emit('close')"

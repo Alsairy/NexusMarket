@@ -277,10 +277,10 @@ watchEffect(() => {
   }
 
   &__checkbox {
-    @apply flex-none z-[1] absolute top-0.5 left-0.5 p-2 rounded bg-[--bg-color];
+    @apply flex-none z-[1] absolute top-0.5 start-0.5 p-2 rounded bg-[--bg-color];
 
     @container (width > theme("containers.2xl")) {
-      @apply static top-auto left-auto -m-2;
+      @apply static top-auto start-auto -m-2;
     }
   }
 
@@ -485,7 +485,7 @@ watchEffect(() => {
     @apply shrink-0;
 
     @container (width <= theme("containers.2xl")) {
-      @apply top-0.5 right-0.5 absolute #{!important};
+      @apply top-0.5 end-0.5 absolute #{!important};
     }
 
     @container (width > theme("containers.2xl")) {

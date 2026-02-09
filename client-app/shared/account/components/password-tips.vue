@@ -1,6 +1,6 @@
 <template>
   <VcAlert color="info" variant="outline" icon :title="$t('password_tips.title')">
-    <ul class="ml-3.5 mt-1 list-disc">
+    <ul class="ms-3.5 mt-1 list-disc">
       <li v-for="(requirementLabel, index) in requirementsLabels" :key="index">
         {{ requirementLabel }}
       </li>

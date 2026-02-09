@@ -23,9 +23,6 @@ fragment userTypeFields on UserType {
     defaultLanguage
     currencyCode
     selectedAddressId
-    organization {
-      ...organizationFields
-    }
     organizations {
       totalCount
     }

@@ -28,7 +28,7 @@
         </template>
       </div>
 
-      <div class="flex flex-col pl-4">
+      <div class="flex flex-col ps-4">
         <router-link
           v-for="(item, index) in subcategories"
           :key="index"

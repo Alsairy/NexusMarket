@@ -217,7 +217,7 @@
             {{ $t("pages.account.orders.order_number_label") }}
           </span>
 
-          <span class="overflow-hidden text-ellipsis pr-4 font-black">
+          <span class="overflow-hidden text-ellipsis pe-4 font-black">
             {{ itemData.item.number }}
           </span>
         </div>
@@ -262,7 +262,7 @@
       <tr
         v-for="order in orders"
         :key="order.id"
-        class="cursor-pointer even:bg-neutral-50 hover:bg-primary-50 transition-colors duration-150"
+        class="cursor-pointer transition-colors duration-150 even:bg-neutral-50 hover:bg-primary-50"
         @click="goToOrderDetails(order)"
       >
         <td class="overflow-hidden text-ellipsis p-5">

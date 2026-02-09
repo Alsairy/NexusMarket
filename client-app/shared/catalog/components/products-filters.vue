@@ -201,7 +201,7 @@ function isSliderFilterEnabled() {
 <style scoped lang="scss">
 :deep(.facet-filter--dropdown:last-child) {
   .vc-popover__content {
-    @apply right-0 left-auto #{!important};
+    @apply end-0 start-auto #{!important};
   }
 }
 </style>

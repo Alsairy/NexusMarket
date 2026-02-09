@@ -13,7 +13,7 @@
         </div>
 
         <div>
-          <span class="mr-1 font-bold">{{ $t("pages.branch.phone") }}</span>
+          <span class="me-1 font-bold">{{ $t("pages.branch.phone") }}</span>
 
           <a v-if="fulfillmentCenter?.phone" :href="`tel:${fulfillmentCenter?.phone}`" class="hover:underline">
             {{ fulfillmentCenter?.phone }}

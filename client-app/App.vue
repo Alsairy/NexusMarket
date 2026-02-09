@@ -112,6 +112,8 @@ onMounted(() => {
 @use "assets/styles/main.scss";
 
 #popover-host {
-  @apply absolute bottom-0 right-0 z-[9999] size-0;
+  @apply absolute bottom-0 z-[9999] size-0;
+
+  inset-inline-end: 0;
 }
 </style>

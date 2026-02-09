@@ -96,7 +96,7 @@
         <div
           v-if="filtersVisible && !isMobile"
           ref="filtersDropdownElement"
-          class="absolute right-0 z-[1] mt-2 w-[27.5rem]"
+          class="absolute end-0 z-[1] mt-2 w-[27.5rem]"
         >
           <VcDialog dividers size="xs">
             <VcDialogHeader @close="hideFilters">
@@ -242,7 +242,7 @@
         >
           <template #desktop-body>
             <tr v-for="contact in contacts" :key="contact.id" class="even:bg-neutral-50">
-              <td class="py-2.5 pl-4 pr-0">
+              <td class="py-2.5 pe-0 ps-4">
                 <RoleIcon :role-id="contact.extended.roles[0]?.id" />
               </td>
 
@@ -281,7 +281,7 @@
                 <RoleIcon :role-id="item.extended.roles[0]?.id" />
               </div>
 
-              <div class="grow py-4.5 pl-4 [word-break:break-word]">
+              <div class="grow py-4.5 ps-4 [word-break:break-word]">
                 <div>
                   <b>{{ item.fullName }}</b>
                 </div>
@@ -291,7 +291,7 @@
                 </div>
               </div>
 
-              <div class="py-4.5 pr-3">
+              <div class="py-4.5 pe-3">
                 <MemberStatus :status="item.status" />
               </div>
 

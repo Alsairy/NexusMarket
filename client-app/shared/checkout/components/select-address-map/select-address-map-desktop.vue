@@ -128,7 +128,7 @@ function onCardSelect(locationId: string) {
   }
 
   &__card {
-    @apply absolute inset-y-3 left-3 w-60;
+    @apply absolute inset-y-3 start-3 w-60;
 
     &--pulse {
       animation: pulse-scale var(--pulse-animation-duration) ease-out;

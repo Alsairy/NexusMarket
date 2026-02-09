@@ -10,10 +10,12 @@
         <div class="mb-3 flex items-start justify-between">
           <div>
             <span class="font-black">{{ item.orderNumber }}</span>
+
             <div class="mt-0.5 text-sm text-neutral-500">
               {{ $t("pages.account.payments.escrow.buyer_label") }}: {{ item.buyerName }}
             </div>
           </div>
+
           <EscrowStatusBadge :status="item.status" />
         </div>
 
@@ -22,6 +24,7 @@
             <span class="text-xs text-neutral-400">
               {{ $t("pages.account.payments.escrow.seller_label") }}
             </span>
+
             <span class="text-sm">{{ item.sellerName }}</span>
           </div>
 
@@ -29,6 +32,7 @@
             <span class="text-xs text-neutral-400">
               {{ $t("pages.account.payments.escrow.amount_label") }}
             </span>
+
             <span class="text-sm font-bold">${{ item.amount.toLocaleString() }}</span>
           </div>
 
@@ -36,6 +40,7 @@
             <span class="text-xs text-neutral-400">
               {{ $t("pages.account.payments.escrow.created_label") }}
             </span>
+
             <span class="text-sm">{{ $d(new Date(item.createdAt), "short") }}</span>
           </div>
 
@@ -43,6 +48,7 @@
             <span class="text-xs text-neutral-400">
               {{ $t("pages.account.payments.escrow.release_condition_label") }}
             </span>
+
             <span class="text-sm">{{ $t(item.releaseCondition) }}</span>
           </div>
         </div>
@@ -80,15 +86,19 @@
         <td class="overflow-hidden text-ellipsis p-5">
           <div class="flex flex-col">
             <span class="text-xs text-neutral-400">{{ $t("pages.account.payments.escrow.buyer_label") }}</span>
+
             <span class="font-semibold">{{ tx.buyerName }}</span>
+
             <span class="text-xs text-neutral-400">{{ $t("pages.account.payments.escrow.seller_label") }}</span>
+
             <span class="font-semibold">{{ tx.sellerName }}</span>
           </div>
         </td>
 
         <td class="overflow-hidden text-ellipsis p-5">
           <span class="font-black">${{ tx.amount.toLocaleString() }}</span>
-          <span class="ml-1 text-xs text-neutral-400">{{ tx.currency }}</span>
+
+          <span class="ms-1 text-xs text-neutral-400">{{ tx.currency }}</span>
         </td>
 
         <td class="p-5">
@@ -105,23 +115,11 @@
 
         <td class="p-5">
           <div class="flex gap-2">
-            <VcButton
-              v-if="canRelease(tx)"
-              size="xs"
-              variant="solid"
-              color="success"
-              @click="$emit('release', tx.id)"
-            >
+            <VcButton v-if="canRelease(tx)" size="xs" variant="solid" color="success" @click="$emit('release', tx.id)">
               {{ $t("pages.account.payments.escrow.release_button") }}
             </VcButton>
 
-            <VcButton
-              v-if="canDispute(tx)"
-              size="xs"
-              variant="outline"
-              color="danger"
-              @click="$emit('dispute', tx.id)"
-            >
+            <VcButton v-if="canDispute(tx)" size="xs" variant="outline" color="danger" @click="$emit('dispute', tx.id)">
               {{ $t("pages.account.payments.escrow.dispute_button") }}
             </VcButton>
           </div>
@@ -142,12 +140,12 @@ interface IProps {
   loading?: boolean;
 }
 
-defineProps<IProps>();
-
 defineEmits<{
   (event: "release", id: string): void;
   (event: "dispute", id: string): void;
 }>();
+
+defineProps<IProps>();
 
 const { t } = useI18n();
 

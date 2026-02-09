@@ -6,7 +6,7 @@
           <div class="min-w-0 truncate">
             <VcImage
               :src="payment?.paymentMethod?.logoUrl"
-              class="mr-3.5 inline-block size-8 object-center md:size-9"
+              class="me-3.5 inline-block size-8 object-center md:size-9"
               lazy
             />
 

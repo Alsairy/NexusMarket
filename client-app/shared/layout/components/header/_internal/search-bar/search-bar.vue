@@ -245,7 +245,9 @@ onMounted(() => {
   }
 
   &__dropdown {
-    @apply z-20 absolute left-0 top-[3.45rem] w-full min-w-[860px] max-w-[100vw];
+    @apply z-20 absolute top-[3.45rem] w-full min-w-[860px] max-w-[100vw];
+
+    inset-inline-start: 0;
   }
 }
 </style>

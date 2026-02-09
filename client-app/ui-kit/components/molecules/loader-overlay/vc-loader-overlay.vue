@@ -33,7 +33,14 @@ withDefaults(defineProps<IProps>(), {
   }
 
   &__spinner {
-    @apply absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-6 w-6 text-primary;
+    @apply absolute top-1/2 h-6 w-6 text-primary;
+
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%);
+
+    [dir="rtl"] & {
+      transform: translate(50%, -50%);
+    }
 
     &--fixed {
       @apply fixed;

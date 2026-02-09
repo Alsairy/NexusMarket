@@ -46,7 +46,7 @@
               :key="item.sku"
               class="flex flex-wrap border-b px-4 py-2.5 text-sm last:border-0 md:table-row md:border-0 md:p-0 md:odd:bg-neutral-50"
             >
-              <div class="flex w-3/5 flex-col pr-3 md:table-cell md:w-auto md:px-4 md:py-2.5 md:align-middle">
+              <div class="flex w-3/5 flex-col pe-3 md:table-cell md:w-auto md:px-4 md:py-2.5 md:align-middle">
                 <span class="text-neutral-400 md:hidden">
                   {{ $t("shared.cart.add_bulk_items_to_cart_results_modal.labels.sku") }}
                 </span>

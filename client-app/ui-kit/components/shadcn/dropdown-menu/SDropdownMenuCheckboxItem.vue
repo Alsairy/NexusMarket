@@ -1,21 +1,3 @@
-<script setup lang="ts">
-import {
-  DropdownMenuCheckboxItem,
-  type DropdownMenuCheckboxItemEmits,
-  type DropdownMenuCheckboxItemProps,
-  DropdownMenuItemIndicator,
-} from "radix-vue";
-import { cn } from "@/ui-kit/utilities/cn";
-
-const props = defineProps<
-  DropdownMenuCheckboxItemProps & {
-    class?: string;
-  }
->();
-
-const emit = defineEmits<DropdownMenuCheckboxItemEmits>();
-</script>
-
 <template>
   <DropdownMenuCheckboxItem
     v-bind="{ ...props, class: undefined }"
@@ -28,7 +10,7 @@ const emit = defineEmits<DropdownMenuCheckboxItemEmits>();
     @update:checked="(val) => emit('update:checked', val)"
     @select="(event) => emit('select', event)"
   >
-    <span class="absolute left-2 flex h-3.5 w-3.5 items-center justify-center">
+    <span class="absolute start-2 flex size-3.5 items-center justify-center">
       <DropdownMenuItemIndicator>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -49,3 +31,17 @@ const emit = defineEmits<DropdownMenuCheckboxItemEmits>();
     <slot />
   </DropdownMenuCheckboxItem>
 </template>
+
+<script setup lang="ts">
+import { DropdownMenuCheckboxItem, DropdownMenuItemIndicator } from "radix-vue";
+import { cn } from "@/ui-kit/utilities/cn";
+import type { DropdownMenuCheckboxItemEmits, DropdownMenuCheckboxItemProps } from "radix-vue";
+
+const emit = defineEmits<DropdownMenuCheckboxItemEmits>();
+
+const props = defineProps<
+  DropdownMenuCheckboxItemProps & {
+    class?: string;
+  }
+>();
+</script>

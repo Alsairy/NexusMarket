@@ -1,6 +1,24 @@
+<template>
+  <Teleport to="body">
+    <div class="fixed bottom-4 end-4 z-[100] flex max-h-screen w-full max-w-sm flex-col-reverse gap-2">
+      <TransitionGroup name="s-toast" tag="div" class="flex flex-col-reverse gap-2">
+        <SToast
+          v-for="toast in toasts.slice(-max)"
+          :key="toast.id"
+          :variant="toast.variant"
+          :title="toast.title"
+          :description="toast.description"
+          :action="toast.action"
+          @close="dismiss(toast.id)"
+        />
+      </TransitionGroup>
+    </div>
+  </Teleport>
+</template>
+
 <script setup lang="ts">
-import { useToast } from "./useToast";
 import SToast from "./SToast.vue";
+import { useToast } from "./useToast";
 
 withDefaults(
   defineProps<{
@@ -16,30 +34,6 @@ withDefaults(
 
 const { toasts, dismiss } = useToast();
 </script>
-
-<template>
-  <Teleport to="body">
-    <div
-      class="fixed bottom-4 right-4 z-[100] flex max-h-screen w-full max-w-sm flex-col-reverse gap-2"
-    >
-      <TransitionGroup
-        name="s-toast"
-        tag="div"
-        class="flex flex-col-reverse gap-2"
-      >
-        <SToast
-          v-for="toast in toasts.slice(-max)"
-          :key="toast.id"
-          :variant="toast.variant"
-          :title="toast.title"
-          :description="toast.description"
-          :action="toast.action"
-          @close="dismiss(toast.id)"
-        />
-      </TransitionGroup>
-    </div>
-  </Teleport>
-</template>
 
 <style scoped>
 .s-toast-enter-active {

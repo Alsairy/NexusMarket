@@ -14,27 +14,16 @@
         v-for="tab in tabs"
         :key="tab.id"
         class="relative px-4 py-3 text-sm font-bold transition-colors"
-        :class="[
-          activeTab === tab.id
-            ? 'text-primary-600'
-            : 'text-neutral-500 hover:text-neutral-700',
-        ]"
+        :class="[activeTab === tab.id ? 'text-primary-600' : 'text-neutral-500 hover:text-neutral-700']"
         @click="activeTab = tab.id"
       >
         {{ $t(tab.label) }}
-        <div
-          v-if="activeTab === tab.id"
-          class="absolute bottom-0 left-0 h-0.5 w-full bg-primary-600"
-        ></div>
+        <div v-if="activeTab === tab.id" class="absolute bottom-0 start-0 h-0.5 w-full bg-primary-600"></div>
       </button>
     </div>
 
     <!-- Escrow Tab -->
-    <VcWidget
-      v-if="activeTab === 'escrow'"
-      :title="$t('pages.account.payments.escrow.widget_title')"
-      size="lg"
-    >
+    <VcWidget v-if="activeTab === 'escrow'" :title="$t('pages.account.payments.escrow.widget_title')" size="lg">
       <template #default-container>
         <EscrowTransactionsTable
           :transactions="escrowTransactions"
@@ -66,16 +55,9 @@
     </div>
 
     <!-- Factoring Tab -->
-    <VcWidget
-      v-if="activeTab === 'factoring'"
-      :title="$t('pages.account.payments.factoring.widget_title')"
-      size="lg"
-    >
+    <VcWidget v-if="activeTab === 'factoring'" :title="$t('pages.account.payments.factoring.widget_title')" size="lg">
       <template #default-container>
-        <FactoringTable
-          :requests="factoringRequests"
-          :loading="loading"
-        />
+        <FactoringTable :requests="factoringRequests" :loading="loading" />
       </template>
     </VcWidget>
 
@@ -89,11 +71,7 @@
         />
 
         <div v-else class="grid gap-4 lg:grid-cols-2">
-          <BnplPlanCard
-            v-for="plan in bnplPlans"
-            :key="plan.id"
-            :plan="plan"
-          />
+          <BnplPlanCard v-for="plan in bnplPlans" :key="plan.id" :plan="plan" />
         </div>
       </VcWidget>
     </div>
